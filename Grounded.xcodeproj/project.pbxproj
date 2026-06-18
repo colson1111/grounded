@@ -6,14 +6,61 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BB000001AA000001BB000001 /* GroundedScheduleExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB000004AA000004BB000004 /* GroundedScheduleExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB000002AA000002BB000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DC4A5A2FA1127200B8569B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB000007AA000007BB000007;
+			remoteInfo = GroundedScheduleExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB000003AA000003BB000003 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB000001AA000001BB000001 /* GroundedScheduleExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A5DC4A622FA1127200B8569B /* doom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DC4A622FA1127200B8569B /* Grounded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grounded.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB000004AA000004BB000004 /* GroundedScheduleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GroundedScheduleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BB000006AA000006BB000006 /* Exceptions for "GroundedScheduleExtension" folder in "GroundedScheduleExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BB000007AA000007BB000007 /* GroundedScheduleExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A5DC4A642FA1127200B8569B /* doom */ = {
+		A5DC4A642FA1127200B8569B /* Grounded */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = doom;
+			path = Grounded;
+			sourceTree = "<group>";
+		};
+		BB000005AA000005BB000005 /* GroundedScheduleExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BB000006AA000006BB000006 /* Exceptions for "GroundedScheduleExtension" folder in "GroundedScheduleExtension" target */,
+			);
+			path = GroundedScheduleExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +73,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB00000FAA00000FBB00000F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A5DC4A592FA1127200B8569B = {
 			isa = PBXGroup;
 			children = (
-				A5DC4A642FA1127200B8569B /* doom */,
+				A5DC4A642FA1127200B8569B /* Grounded */,
+				BB000005AA000005BB000005 /* GroundedScheduleExtension */,
 				A5DC4A632FA1127200B8569B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +95,8 @@
 		A5DC4A632FA1127200B8569B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5DC4A622FA1127200B8569B /* doom.app */,
+				A5DC4A622FA1127200B8569B /* Grounded.app */,
+				BB000004AA000004BB000004 /* GroundedScheduleExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,27 +104,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5DC4A612FA1127200B8569B /* doom */ = {
+		A5DC4A612FA1127200B8569B /* Grounded */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5DC4A6D2FA1127300B8569B /* Build configuration list for PBXNativeTarget "doom" */;
+			buildConfigurationList = A5DC4A6D2FA1127300B8569B /* Build configuration list for PBXNativeTarget "Grounded" */;
 			buildPhases = (
 				A5DC4A5E2FA1127200B8569B /* Sources */,
 				A5DC4A5F2FA1127200B8569B /* Frameworks */,
 				A5DC4A602FA1127200B8569B /* Resources */,
+				BB000003AA000003BB000003 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB000008AA000008BB000008 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A5DC4A642FA1127200B8569B /* Grounded */,
+			);
+			name = Grounded;
+			packageProductDependencies = (
+			);
+			productName = doom;
+			productReference = A5DC4A622FA1127200B8569B /* Grounded.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB000007AA000007BB000007 /* GroundedScheduleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00000DAA00000DBB00000D /* Build configuration list for PBXNativeTarget "GroundedScheduleExtension" */;
+			buildPhases = (
+				BB000009AA000009BB000009 /* Sources */,
+				BB00000FAA00000FBB00000F /* Frameworks */,
+				BB00000AAA00000ABB00000A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A5DC4A642FA1127200B8569B /* doom */,
+				BB000005AA000005BB000005 /* GroundedScheduleExtension */,
 			);
-			name = doom;
+			name = GroundedScheduleExtension;
 			packageProductDependencies = (
 			);
-			productName = doom;
-			productReference = A5DC4A622FA1127200B8569B /* doom.app */;
-			productType = "com.apple.product-type.application";
+			productName = GroundedScheduleExtension;
+			productReference = BB000004AA000004BB000004 /* GroundedScheduleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,9 +163,12 @@
 					A5DC4A612FA1127200B8569B = {
 						CreatedOnToolsVersion = 26.4.1;
 					};
+					BB000007AA000007BB000007 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
 				};
 			};
-			buildConfigurationList = A5DC4A5D2FA1127200B8569B /* Build configuration list for PBXProject "doom" */;
+			buildConfigurationList = A5DC4A5D2FA1127200B8569B /* Build configuration list for PBXProject "Grounded" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,13 +182,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5DC4A612FA1127200B8569B /* doom */,
+				A5DC4A612FA1127200B8569B /* Grounded */,
+				BB000007AA000007BB000007 /* GroundedScheduleExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A5DC4A602FA1127200B8569B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB00000AAA00000ABB00000A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB000009AA000009BB000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB000008AA000008BB000008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB000007AA000007BB000007 /* GroundedScheduleExtension */;
+			targetProxy = BB000002AA000002BB000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A5DC4A6B2FA1127300B8569B /* Debug */ = {
@@ -249,21 +355,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Grounded/grounded.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4KFVD2327;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Grounded;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan QR codes and recognize objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.craig.doom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craig.grounded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -280,21 +391,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Grounded/grounded.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4KFVD2327;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Grounded;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan QR codes and recognize objects";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.craig.doom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craig.grounded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -306,10 +422,60 @@
 			};
 			name = Release;
 		};
+		BB00000BAA00000BBB00000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GroundedScheduleExtension/GroundedScheduleExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4KFVD2327;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GroundedScheduleExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craig.grounded.GroundedScheduleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB00000CAA00000CBB00000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GroundedScheduleExtension/GroundedScheduleExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4KFVD2327;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GroundedScheduleExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craig.grounded.GroundedScheduleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5DC4A5D2FA1127200B8569B /* Build configuration list for PBXProject "doom" */ = {
+		A5DC4A5D2FA1127200B8569B /* Build configuration list for PBXProject "Grounded" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5DC4A6B2FA1127300B8569B /* Debug */,
@@ -318,11 +484,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5DC4A6D2FA1127300B8569B /* Build configuration list for PBXNativeTarget "doom" */ = {
+		A5DC4A6D2FA1127300B8569B /* Build configuration list for PBXNativeTarget "Grounded" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5DC4A6E2FA1127300B8569B /* Debug */,
 				A5DC4A6F2FA1127300B8569B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00000DAA00000DBB00000D /* Build configuration list for PBXNativeTarget "GroundedScheduleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00000BAA00000BBB00000B /* Debug */,
+				BB00000CAA00000CBB00000C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
