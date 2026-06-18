@@ -289,28 +289,17 @@ class BlockingManager {
                 guard await ensureScheduleAuthorization() else { return }
             }
             syncSchedule(for: profile)
-
-            // If a schedule block was deleted while its window was active, the
-            // evaluateScheduledActivation call inside syncSchedule will have cleared
-            // the shields (because the block no longer exists). Re-lock so the user
-            // must still use the anchor or QR code to unlock.
-            if wasScheduleLocked && !activeState.profile.isActive {
-                var restored = profile
-                restored.isActive = true
-                activeState = ActiveProfileState(
-                    profile: restored,
-                    activationSource: .schedule,
-                    scheduleActivityName: nil
-                )
-                ProfileStore.saveActiveState(activeState)
-                applyShields(profile)
-            }
         }
 
         if activeState.profile.id == profile.id {
             var state = activeState
             state.profile = profile
             state.profile.isActive = activeState.profile.isActive
+            // Block deleted mid-window: convert to .manual so the schedule watcher
+            // can't auto-clear the session. User must still use anchor/QR to unlock.
+            if wasScheduleLocked && !isCurrentlyInScheduledWindow(for: profile) {
+                state.activationSource = .manual
+            }
             activeState = state
             ProfileStore.saveActiveState(activeState)
             if state.profile.isActive {
