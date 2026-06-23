@@ -5,7 +5,7 @@ struct OnboardingView: View {
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @State private var page = 0
     @Bindable private var manager = BlockingManager.shared
-    private let pageCount = 4
+    private let pageCount = 6
 
     var body: some View {
         VStack(spacing: 0) {
@@ -14,6 +14,8 @@ struct OnboardingView: View {
                 presencePage.tag(1)
                 boundariesPage.tag(2)
                 permissionPage.tag(3)
+                backupKeyPage.tag(4)
+                profileTourPage.tag(5)
             }
             .tabViewStyle(.page(indexDisplayMode: .always))
 
@@ -55,7 +57,7 @@ struct OnboardingView: View {
                 .foregroundStyle(GroundedTheme.softMist)
                 .multilineTextAlignment(.center)
 
-            Text("Grounded helps you step away from the noise, so you can be where you actually are. Not a productivity hack. A pause for your mind.")
+            Text("Grounded helps you put the phone down and be where you actually are. Not a productivity hack. A pause for your mind.")
                 .foregroundStyle(GroundedTheme.warmEarth)
                 .multilineTextAlignment(.center)
         }
@@ -67,7 +69,7 @@ struct OnboardingView: View {
             systemImage: "sun.horizon.fill",
             tint: GroundedTheme.calmGreen
         ) {
-            Text("Constant scrolling pulls your attention in a hundred directions. Grounded quiets the pull. The apps and sites you choose stay out of reach while you're living your life.")
+            Text("It's easy to pick up your phone and lose the moment. Grounded quiets the noise. The apps and sites you choose stay out of reach while you're actually living your life.")
                 .foregroundStyle(GroundedTheme.warmEarth)
 
             VStack(alignment: .leading, spacing: 10) {
@@ -86,15 +88,15 @@ struct OnboardingView: View {
             systemImage: "leaf.circle.fill",
             tint: GroundedTheme.calmGreen
         ) {
-            Text("Starting a pause is easy. Tap a profile, or let a schedule welcome you into quieter hours.")
+            Text("Starting a pause is easy. Tap a profile, or let a schedule ease you into quieter hours.")
                 .foregroundStyle(GroundedTheme.warmEarth)
 
-            Text("Coming back takes a small ritual. A moment to ask yourself: am I ready?")
+            Text("Coming back asks for a small moment of intention. A chance to check in with yourself before you dive back in.")
                 .foregroundStyle(GroundedTheme.warmEarth)
 
             VStack(alignment: .leading, spacing: 10) {
-                presenceRow("Scan an anchor, something real in your space, like a book or plant", systemImage: "anchor")
-                presenceRow("Or scan your printed unlock code", systemImage: "qrcode")
+                presenceRow("Scan an anchor (something real in your space, like a book or a plant)", systemImage: "anchor")
+                presenceRow("Or scan your printed backup key", systemImage: "qrcode")
             }
             .padding(.top, 4)
 
@@ -106,11 +108,11 @@ struct OnboardingView: View {
 
     private var permissionPage: some View {
         onboardingPage(
-            title: "One Last Step",
+            title: "Almost There",
             systemImage: "hourglass.circle.fill",
             tint: GroundedTheme.calmGreen
         ) {
-            Text("Grounded uses Apple's Screen Time to hold your boundaries gently, even when the app is closed.")
+            Text("Grounded uses Apple's Screen Time to keep your chosen apps out of reach, even when the app is closed.")
                 .foregroundStyle(GroundedTheme.warmEarth)
 
             if manager.isAuthorized {
@@ -123,6 +125,69 @@ struct OnboardingView: View {
                 .buttonStyle(.bordered)
                 .tint(GroundedTheme.calmGreen)
             }
+        }
+    }
+
+    private var profileTourPage: some View {
+        onboardingPage(
+            title: "Creating a Profile",
+            systemImage: "person.crop.rectangle.fill",
+            tint: GroundedTheme.calmGreen
+        ) {
+            Text("Tap + on the main screen to create your first profile. Each one is a different kind of pause.")
+                .foregroundStyle(GroundedTheme.warmEarth)
+
+            VStack(alignment: .leading, spacing: 14) {
+                tourRow("Name", systemImage: "pencil", description: "Something that fits the moment: Work, Sleep, Family Time.")
+                tourRow("Apps to Block", systemImage: "shield.fill", description: "The apps you want out of reach while the profile is on.")
+                tourRow("Websites", systemImage: "globe", description: "Block categories of sites, or add specific ones.")
+                tourRow("Schedule", systemImage: "clock", description: "Have it activate automatically at certain times of day.")
+                tourRow("Anchor Object", systemImage: "camera.fill", description: "A real object in your space that your camera must see to unlock.")
+            }
+
+            Text("You can edit any profile later. Nothing is set in stone.")
+                .font(.subheadline)
+                .foregroundStyle(GroundedTheme.softMist)
+                .multilineTextAlignment(.center)
+        }
+    }
+
+    private func tourRow(_ title: String, systemImage: String, description: String) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: systemImage)
+                .font(.subheadline)
+                .foregroundStyle(GroundedTheme.calmGreen)
+                .frame(width: 20, alignment: .center)
+                .padding(.top, 2)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.subheadline.bold())
+                    .foregroundStyle(.primary)
+                Text(description)
+                    .font(.subheadline)
+                    .foregroundStyle(GroundedTheme.warmEarth)
+            }
+        }
+    }
+
+    private var backupKeyPage: some View {
+        onboardingPage(
+            title: "Your Backup Key",
+            systemImage: "qrcode",
+            tint: GroundedTheme.calmGreen
+        ) {
+            Text("This QR code is your master key. Scan it any time to unlock Grounded, no matter which profile is active.")
+                .foregroundStyle(GroundedTheme.warmEarth)
+
+            Text("Print it and tuck it somewhere safe: a drawer, a wallet, the back of a notebook. Out of sight, but there when you need it.")
+                .foregroundStyle(GroundedTheme.warmEarth)
+
+            QRCodeSectionView(profile: .off, printTitle: "Grounded — Master Unlock")
+
+            Text("Not near a printer right now? No worries. This is always available under Settings > Master Unlock QR.")
+                .font(.subheadline)
+                .foregroundStyle(GroundedTheme.softMist)
+                .multilineTextAlignment(.center)
         }
     }
 

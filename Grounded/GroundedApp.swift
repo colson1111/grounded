@@ -1,4 +1,5 @@
 import SwiftUI
+import UserNotifications
 
 @main
 struct GroundedApp: App {
@@ -14,6 +15,12 @@ struct GroundedApp: App {
                 }
             }
             .tint(GroundedTheme.calmGreen)
+            .task { await requestNotificationPermission() }
         }
+    }
+
+    private func requestNotificationPermission() async {
+        try? await UNUserNotificationCenter.current()
+            .requestAuthorization(options: [.alert, .sound])
     }
 }

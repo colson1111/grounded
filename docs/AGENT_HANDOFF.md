@@ -55,21 +55,55 @@ Quick context for new agent sessions. Read this + `STATUS.md` before coding.
 8. Onboarding flow
 9. Schedule conflict UI (red banner + badges on both conflicting entries)
 10. Schedule-delete bypass fix
+11. Onboarding expanded: master QR page + profile tour page; copy pass (no em dashes, naturalised text)
+12. Phase B — Schedule notifications: local `UNUserNotificationCenter` notification on schedule activation, posted from both `BlockingManager` and `ScheduleMonitor`
+13. Phase C — Statistics & weekly summary (see below)
+
+## Phase C details (Jun 2026)
+
+### New files
+- `Grounded/TransitionLogger.swift` — `TransitionEvent`, `TransitionLogger`, `SessionRecord`, `WeeklySummary`
+- `Grounded/WeeklySummaryCard.swift` — Sunday popup card + `WeeklySummaryCardContainer` (`@Observable`)
+
+### Data model
+- `ProfileCategory` enum on `BlockProfile`: `.focus`, `.family`, `.rest`, `.personal`
+  - Each has `groundingContext(minutes:)` — grounding metaphor (deep work sessions, bedtime stories, full nights sleep, hour-long walks)
+- `TransitionEvent` appended to `profileTransitions.json` in app group container on every activate/deactivate
+- Both `BlockingManager` and `ScheduleMonitor` log events (extension uses inline `TransitionLog` — can't import main module)
+
+### UI
+- `WeeklySummaryCard` in `ContentView` — shows Sundays only, dismissed once/week via `@AppStorage("lastDismissedSummaryWeek")`; loads Mon–Sun of previous week
+- Settings → Statistics — all-time per-profile totals + full session list (activate→deactivate pairs)
+- Profile editor — "Profile Type" picker added (`@State private var category: ProfileCategory`)
+- `ContentView` layout fix — status card moved inside `ScrollView`; `.navigationBarTitleDisplayMode(.inline)` prevents title from scrolling independently
+
+### Deferred todo
+- Profile category should suggest default blocked apps when selected in editor (noted during design, not yet built)
 
 ## Suggested next phases
 
-### Phase A — Friction polish
-- Confirmation before Unlock Everything
-- Optional: replay onboarding in Settings
-
-### Phase B — Schedule notifications
-- Local notification when schedule activates a profile
-
-### Phase C — Weekly summary
-- Track `activeProfile` transitions locally; weekly in-app card
-
 ### Phase D — App Store prep
-- Strip `print()`, privacy policy, entitlement approval, TestFlight
+- Strip `print()` calls
+- Privacy policy
+- Entitlement approval
+- TestFlight
+
+## Onboarding page order (Jun 2026)
+
+0. Welcome to Grounded
+1. Be Here Now
+2. Gentle Boundaries
+3. Almost There (Screen Time permission)
+4. Your Backup Key (master QR — `QRCodeSectionView(profile: .off)`)
+5. Creating a Profile (static tour of profile editor sections)
+→ Get Started
+
+## QR system notes
+
+- One master unlock QR, not per-profile. Payload: `grounded://profile/<BlockProfile.off.id>`
+- `BlockProfile.off` is a fixed sentinel with a stable ID — same QR every install
+- Scanner in `CameraUnlockView.swift:68` checks prefix and deactivates active profile
+- `MasterUnlockQRView` in `SettingsView.swift:51` renders the same QR in Settings
 
 ## Testing checklist
 
@@ -77,15 +111,19 @@ Quick context for new agent sessions. Read this + `STATUS.md` before coding.
 - [x] Manual deactivate mid-window stays off (suppression)
 - [x] Deleting a schedule block mid-window does NOT deactivate (stays locked, requires anchor/QR)
 - [x] Two overlapping windows show red conflict UI on both entries
+- [x] Onboarding replay works from Settings
+- [x] Schedule activation triggers local notification
+- [x] Statistics page shows per-profile totals + session list
+- [x] Weekly summary card appears on Sundays, dismisses once/week
 - [ ] Object recognition anchor unlock — needs real-world testing
-- [ ] QR code generate + scan flow
-- [ ] Onboarding shows once; Get Started → main screen
+- [x] QR code generate + scan flow
+- [x] Onboarding shows once; Get Started → main screen
 - [ ] Switch profile requires anchor
 - [ ] New profile: name field usable while options load
 
 ## Do not regress
 
 - Never require anchor to **start** a profile from unlocked state
-- Never brick the phone — Unlock Everything + iOS Settings always work
+- Never brick the phone — iOS Settings always work as escape hatch
 - Schedules must not cross midnight in UI defaults
 - Deleting a schedule block mid-window must NOT unlock the app

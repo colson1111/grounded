@@ -2,6 +2,7 @@ import DeviceActivity
 import FamilyControls
 import Foundation
 import ManagedSettings
+import UserNotifications
 
 // Minimal copies for the extension — cannot import the main app module.
 private struct BlockProfile: Codable {
@@ -12,6 +13,7 @@ private struct BlockProfile: Codable {
     var activitySelectionData: Data?
     var activityIncludeEntireCategory: Bool = false
     var allowedApplicationTokensData: Data? = nil
+    var category: String = "focus"
 }
 
 private enum ActivationSource: String, Codable {
@@ -28,6 +30,37 @@ private enum ScheduleWindowKey {
     static func make(activityName: String, date: Date = Date()) -> String {
         let day = Int(Calendar.current.startOfDay(for: date).timeIntervalSince1970)
         return "\(activityName).\(day)"
+    }
+}
+
+private struct TransitionEvent: Codable {
+    enum EventType: String, Codable { case activate, deactivate }
+    var id: String = UUID().uuidString
+    var profileId: String
+    var profileName: String
+    var category: String
+    var timestamp: Date
+    var eventType: EventType
+    var source: String
+}
+
+private enum TransitionLog {
+    static func append(profileId: String, profileName: String, category: String, eventType: TransitionEvent.EventType, source: String) {
+        let event = TransitionEvent(profileId: profileId, profileName: profileName, category: category, timestamp: Date(), eventType: eventType, source: source)
+        var events: [TransitionEvent] = []
+        if let url = fileURL, let data = try? Data(contentsOf: url) {
+            events = (try? JSONDecoder().decode([TransitionEvent].self, from: data)) ?? []
+        }
+        events.append(event)
+        if let url = fileURL, let data = try? JSONEncoder().encode(events) {
+            try? data.write(to: url, options: .atomic)
+        }
+    }
+
+    private static var fileURL: URL? {
+        FileManager.default
+            .containerURL(forSecurityApplicationGroupIdentifier: "group.com.craig.grounded")?
+            .appendingPathComponent("profileTransitions.json")
     }
 }
 
@@ -111,6 +144,8 @@ class ScheduleMonitor: DeviceActivityMonitor {
         )
         AppGroupStorage.saveActiveState(state)
         applyShields(profile)
+        postActivationNotification(profileName: profile.name)
+        TransitionLog.append(profileId: profile.id, profileName: profile.name, category: profile.category, eventType: .activate, source: "schedule")
     }
 
     override func intervalDidEnd(for activity: DeviceActivityName) {
@@ -141,6 +176,7 @@ class ScheduleMonitor: DeviceActivityMonitor {
         AppGroupStorage.saveActiveState(cleared)
         clearShields()
         AppGroupStorage.clearSuppression(forActivity: activity.rawValue)
+        TransitionLog.append(profileId: state.profile.id, profileName: state.profile.name, category: state.profile.category, eventType: .deactivate, source: "schedule")
     }
 
     // Activity name format: "grounded.<profileID>.<blockID>.wd<n>"
@@ -246,5 +282,18 @@ class ScheduleMonitor: DeviceActivityMonitor {
         store.shield.applicationCategories = nil
         store.shield.webDomains = nil
         store.webContent.blockedByFilter = nil
+    }
+
+    private func postActivationNotification(profileName: String) {
+        let content = UNMutableNotificationContent()
+        content.title = "Grounded is active"
+        content.body = "\"\(profileName)\" is now blocking distractions."
+        content.sound = .default
+        let request = UNNotificationRequest(
+            identifier: "grounded.schedule.activate.\(UUID().uuidString)",
+            content: content,
+            trigger: nil
+        )
+        UNUserNotificationCenter.current().add(request)
     }
 }

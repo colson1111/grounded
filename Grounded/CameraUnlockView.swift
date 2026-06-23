@@ -50,7 +50,7 @@ struct CameraUnlockView: View {
                 .padding()
 
                 if let switchToProfile {
-                    Text("Scan \(BlockingManager.shared.activeProfile.name)'s anchor to switch to \(switchToProfile.name)")
+                    Text("Scan \(BlockingManager.shared.activeProfile.name)'s anchor or the master QR code to switch to \(switchToProfile.name)")
                         .font(.subheadline.bold())
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
@@ -71,8 +71,11 @@ struct CameraUnlockView: View {
         guard profileID == "off" else { return }
 
         Task {
-            let off = BlockProfile.off
-            await BlockingManager.shared.activate(off)
+            if let target = switchToProfile {
+                await BlockingManager.shared.activate(target)
+            } else {
+                await BlockingManager.shared.activate(BlockProfile.off)
+            }
             dismiss()
         }
     }

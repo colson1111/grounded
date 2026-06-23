@@ -3,6 +3,7 @@ import FamilyControls
 import Foundation
 import ManagedSettings
 import Observation
+import UserNotifications
 
 @Observable
 class BlockingManager {
@@ -87,12 +88,30 @@ class BlockingManager {
                 )
                 ProfileStore.saveActiveState(activeState)
                 applyShields(profile)
+                scheduleActivationNotification(profileName: profile.name)
+                TransitionLogger.log(
+                    profileId: profile.id,
+                    profileName: profile.name,
+                    category: profile.category,
+                    eventType: .activate,
+                    source: "schedule"
+                )
                 print("[Grounded] Schedule window active — applied '\(profile.name)'")
             }
             return
         }
 
         if activeState.activationSource == .schedule && activeState.profile.isActive {
+            let prev = activeState.profile
+            if let fullProfile = profiles.first(where: { $0.id == prev.id }) {
+                TransitionLogger.log(
+                    profileId: fullProfile.id,
+                    profileName: fullProfile.name,
+                    category: fullProfile.category,
+                    eventType: .deactivate,
+                    source: "schedule"
+                )
+            }
             activeState = .off
             ProfileStore.saveActiveState(activeState)
             clearShields()
@@ -152,7 +171,24 @@ class BlockingManager {
                 scheduleActivityName: nil
             )
             applyShields(updated)
+            TransitionLogger.log(
+                profileId: updated.id,
+                profileName: updated.name,
+                category: updated.category,
+                eventType: .activate,
+                source: "manual"
+            )
         } else {
+            if let prev = profiles.first(where: { $0.id == activeState.profile.id }),
+               activeState.profile.isActive {
+                TransitionLogger.log(
+                    profileId: prev.id,
+                    profileName: prev.name,
+                    category: prev.category,
+                    eventType: .deactivate,
+                    source: "manual"
+                )
+            }
             if profiles.contains(where: { isCurrentlyInScheduledWindow(for: $0) }) {
                 ProfileStore.suppressCurrentScheduleWindows(for: profiles)
             }
@@ -323,5 +359,18 @@ class BlockingManager {
         if activeState.profile.id == profile.id {
             Task { await activate(BlockProfile.off) }
         }
+    }
+
+    private func scheduleActivationNotification(profileName: String) {
+        let content = UNMutableNotificationContent()
+        content.title = "Grounded is active"
+        content.body = "\"\(profileName)\" is now blocking distractions."
+        content.sound = .default
+        let request = UNNotificationRequest(
+            identifier: "grounded.schedule.activate.\(UUID().uuidString)",
+            content: content,
+            trigger: nil
+        )
+        UNUserNotificationCenter.current().add(request)
     }
 }

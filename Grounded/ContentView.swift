@@ -7,6 +7,7 @@ struct ContentView: View {
     @State private var showSettings = false
     @State private var showCamera = false
     @State private var switchToProfile: BlockProfile?
+    @State private var summaryContainer = WeeklySummaryCardContainer()
 
     private var activatableProfiles: [BlockProfile] {
         manager.profiles
@@ -15,21 +16,23 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
-                statusCard
-                    .padding(.horizontal)
-                    .padding(.top, 8)
-
-                if manager.activeProfile.isActive {
-                    unlockRequirements
-                        .padding(.horizontal)
-                        .padding(.top, 8)
-                }
-
-                Divider()
-                    .padding(.top, 12)
-
                 ScrollView {
                     LazyVStack(spacing: 0) {
+                        WeeklySummaryCardView(container: summaryContainer)
+
+                        statusCard
+                            .padding(.horizontal)
+                            .padding(.top, 8)
+
+                        if manager.activeProfile.isActive {
+                            unlockRequirements
+                                .padding(.horizontal)
+                                .padding(.top, 8)
+                        }
+
+                        Divider()
+                            .padding(.top, 12)
+
                         ForEach(activatableProfiles) { profile in
                             profileRow(profile)
                             if profile.id != activatableProfiles.last?.id {
@@ -37,8 +40,8 @@ struct ContentView: View {
                                     .padding(.leading, 52)
                             }
                         }
+                        .padding(.vertical, 4)
                     }
-                    .padding(.vertical, 4)
                 }
 
                 Divider()
@@ -55,6 +58,7 @@ struct ContentView: View {
                 .padding()
             }
             .navigationTitle("Grounded")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -79,6 +83,7 @@ struct ContentView: View {
         .task {
             manager.load()
             VisionLabelCatalog.preloadTaxonomy()
+            summaryContainer.load()
         }
         .onChange(of: scenePhase) { _, phase in
             if phase == .active {

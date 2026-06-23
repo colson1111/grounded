@@ -34,6 +34,7 @@ struct ProfileEditorView: View {
     @State private var originalActivityIncludeEntireCategory = false
     @State private var allowedApplicationTokensData: Data?
     @State private var originalAllowedApplicationTokensData: Data?
+    @State private var category: ProfileCategory
 
     private var isEditingActiveProfile: Bool {
         guard let editingID else { return false }
@@ -48,6 +49,7 @@ struct ProfileEditorView: View {
         editingID = profile?.id
         _showAdvancedSections = State(initialValue: profile != nil)
         _name = State(initialValue: profile?.name ?? "")
+        _category = State(initialValue: profile?.category ?? .focus)
         if let anchorObjects = profile?.anchorObjects, !anchorObjects.isEmpty {
             _anchorObjects = State(initialValue: VisionLabelCatalog.normalizedAnchorList(anchorObjects))
         } else {
@@ -87,6 +89,7 @@ struct ProfileEditorView: View {
         NavigationStack {
             Form {
                 nameSection
+                categorySection
                 if showAdvancedSections {
                     appPickerDisclosureSection
                     presetDomainsDisclosureSection
@@ -193,6 +196,17 @@ struct ProfileEditorView: View {
                 .focused($isNameFieldFocused)
                 .textInputAutocapitalization(.words)
                 .autocorrectionDisabled()
+        }
+    }
+
+    private var categorySection: some View {
+        Section("Profile Type") {
+            Picker("Type", selection: $category) {
+                ForEach(ProfileCategory.allCases, id: \.self) { cat in
+                    Text(cat.displayName).tag(cat)
+                }
+            }
+            .pickerStyle(.menu)
         }
     }
 
@@ -620,7 +634,8 @@ struct ProfileEditorView: View {
             activityIncludeEntireCategory: activitySelection.includeEntireCategory,
             allowedApplicationTokensData: allowedApplicationTokensData,
             anchorObjects: VisionLabelCatalog.normalizedAnchorList(anchorObjects),
-            scheduleBlocks: scheduleBlocks
+            scheduleBlocks: scheduleBlocks,
+            category: category
         )
         Task {
             if !scheduleBlocks.isEmpty {

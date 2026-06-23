@@ -86,6 +86,42 @@ enum ScheduleWindowIndex {
     }
 }
 
+// MARK: - Profile category
+
+enum ProfileCategory: String, Codable, CaseIterable {
+    case focus
+    case family
+    case rest
+    case personal
+
+    var displayName: String {
+        switch self {
+        case .focus:    return "Focus / Deep Work"
+        case .family:   return "Family Time"
+        case .rest:     return "Rest & Sleep"
+        case .personal: return "Personal Time"
+        }
+    }
+
+    /// Returns a grounding metaphor line for a given number of minutes.
+    func groundingContext(minutes: Int) -> String {
+        switch self {
+        case .focus:
+            let sessions = max(1, minutes / 45)
+            return "\(sessions) deep work session\(sessions == 1 ? "" : "s")"
+        case .family:
+            let stories = max(1, minutes / 10)
+            return "\(stories) bedtime stor\(stories == 1 ? "y" : "ies")"
+        case .rest:
+            let nights = max(1, minutes / 480)
+            return "\(nights) full night\(nights == 1 ? "" : "s") of sleep"
+        case .personal:
+            let walks = max(1, minutes / 60)
+            return "\(walks) hour-long walk\(walks == 1 ? "" : "s")"
+        }
+    }
+}
+
 // MARK: - Activation
 
 enum ActivationSource: String, Codable {
@@ -145,6 +181,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
     var allowedApplicationTokensData: Data? = nil
     var anchorObjects: [String] = []
     var scheduleBlocks: [ScheduleBlock] = []
+    var category: ProfileCategory = .focus
 
     enum CodingKeys: String, CodingKey {
         case id, name, isActive, blockedDomains, activitySelectionData, activityIncludeEntireCategory
@@ -152,6 +189,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         case scheduleBlocks
         case anchorObjects
         case antidoteObjects
+        case category
     }
 
     init(
@@ -163,7 +201,8 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         activityIncludeEntireCategory: Bool = false,
         allowedApplicationTokensData: Data? = nil,
         anchorObjects: [String] = [],
-        scheduleBlocks: [ScheduleBlock] = []
+        scheduleBlocks: [ScheduleBlock] = [],
+        category: ProfileCategory = .focus
     ) {
         self.id = id
         self.name = name
@@ -174,6 +213,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         self.allowedApplicationTokensData = allowedApplicationTokensData
         self.anchorObjects = anchorObjects
         self.scheduleBlocks = scheduleBlocks
+        self.category = category
     }
 
     init(from decoder: Decoder) throws {
@@ -191,6 +231,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
             anchorObjects = try container.decodeIfPresent([String].self, forKey: .antidoteObjects) ?? []
         }
         scheduleBlocks = try container.decodeIfPresent([ScheduleBlock].self, forKey: .scheduleBlocks) ?? []
+        category = try container.decodeIfPresent(ProfileCategory.self, forKey: .category) ?? .focus
     }
 
     func encode(to encoder: Encoder) throws {
@@ -204,6 +245,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         try container.encodeIfPresent(allowedApplicationTokensData, forKey: .allowedApplicationTokensData)
         try container.encode(anchorObjects, forKey: .anchorObjects)
         try container.encode(scheduleBlocks, forKey: .scheduleBlocks)
+        try container.encode(category, forKey: .category)
     }
 
     static let off = BlockProfile(id: "off", name: "Off", isActive: false)
@@ -230,7 +272,8 @@ struct BlockProfile: Codable, Identifiable, Hashable {
                 "reddit.com", "youtube.com", "youtu.be", "googlevideo.com",
                 "facebook.com", "netflix.com", "espn.com", "nytimes.com"
             ],
-            anchorObjects: ["coffee", "mug"]
+            anchorObjects: ["coffee", "mug"],
+            category: .rest
         ),
     ]
 }
