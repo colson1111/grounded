@@ -80,13 +80,30 @@ Quick context for new agent sessions. Read this + `STATUS.md` before coding.
 ### Deferred todo
 - Profile category should suggest default blocked apps when selected in editor (noted during design, not yet built)
 
-## Suggested next phases
+## Phase D — App Store prep (Jun 2026)
 
-### Phase D — App Store prep
-- Strip `print()` calls
-- Privacy policy
-- Entitlement approval
-- TestFlight
+### Completed
+- Stripped all `print()` calls from `BlockingManager.swift` and `ProfileEditorView.swift`
+- `docs/APP_STORE_LISTING.md` — name, price ($2.99 one-time), short + long descriptions
+- `docs/PRIVACY_POLICY.md` — no data collection, camera on-device only, no third-party SDKs
+- `docs/TESTFLIGHT_CHECKLIST.md` — full archive → TestFlight → App Store submission checklist
+
+### Pricing decision
+- Launch at $2.99 one-time
+- Early buyers grandfathered as "Founding Members" if subscription model added later
+
+### Still required before submission
+- [ ] Host privacy policy publicly (enable GitHub Pages on this repo → `/docs` folder)
+- [ ] Screenshots: 6.5" (iPhone 14 Pro Max) and 5.5" (iPhone 8 Plus) simulators
+- [ ] App Store Connect: create app listing, fill metadata from `APP_STORE_LISTING.md`
+- [ ] Archive + upload build from Xcode (see `TESTFLIGHT_CHECKLIST.md`)
+- [ ] Beta test via TestFlight before public release
+
+## Suggested next work
+- Capture screenshots and set up App Store Connect listing
+- Enable GitHub Pages for privacy policy hosting
+- TestFlight internal testing
+- Deferred feature: profile category → suggest default blocked apps in editor
 
 ## Onboarding page order (Jun 2026)
 

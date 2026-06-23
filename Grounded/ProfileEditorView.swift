@@ -334,7 +334,6 @@ struct ProfileEditorView: View {
 
         activitySelection = ActivitySelectionHelpers.selectionForPicker(from: activitySelection)
         let allowedCount = ActivitySelectionHelpers.decodeAllowedTokens(from: allowedApplicationTokensData).count
-        print("[Grounded] Opening picker — apps: \(activitySelection.applicationTokens.count), categories: \(activitySelection.categoryTokens.count), allowedExceptions: \(allowedCount), includeEntireCategory: \(activitySelection.includeEntireCategory)")
         showActivityPicker = true
     }
 
@@ -621,7 +620,6 @@ struct ProfileEditorView: View {
         let id = editingID ?? UUID().uuidString
         let selectionData = ActivitySelectionHelpers.encodeSelection(activitySelection)
         let allowedCount = ActivitySelectionHelpers.decodeAllowedTokens(from: allowedApplicationTokensData).count
-        print("[Grounded] Saving profile — app tokens: \(activitySelection.applicationTokens.count), categories: \(activitySelection.categoryTokens.count), allowedExceptions: \(allowedCount), includeEntireCategory: \(activitySelection.includeEntireCategory), selectionData: \(selectionData?.count ?? 0) bytes")
         let wasActive = editingID.flatMap { id in
             manager.activeState.profile.id == id && manager.activeState.profile.isActive
         } ?? false

@@ -24,7 +24,6 @@ class BlockingManager {
 
     func load() {
         if !ProfileStore.isAppGroupAvailable {
-            print("[Grounded] App Group '\(ProfileStore.appGroupID)' is not available. Add App Groups capability to both targets and regenerate provisioning profiles. Using device-local storage until fixed.")
         }
         profiles = ProfileStore.loadProfilesSeedingStartersIfNeeded()
         if let saved = ProfileStore.loadActiveState() {
@@ -55,7 +54,6 @@ class BlockingManager {
     func registerAllSchedules() async {
         guard profiles.contains(where: { !$0.scheduleBlocks.isEmpty }) else { return }
         guard await ensureScheduleAuthorization() else {
-            print("[Grounded] Schedules not registered — Screen Time permission not granted.")
             return
         }
         for profile in profiles where !profile.scheduleBlocks.isEmpty {
@@ -96,7 +94,6 @@ class BlockingManager {
                     eventType: .activate,
                     source: "schedule"
                 )
-                print("[Grounded] Schedule window active — applied '\(profile.name)'")
             }
             return
         }
@@ -115,7 +112,6 @@ class BlockingManager {
             activeState = .off
             ProfileStore.saveActiveState(activeState)
             clearShields()
-            print("[Grounded] Schedule window ended — cleared shields")
         }
     }
 
@@ -149,7 +145,6 @@ class BlockingManager {
             try await AuthorizationCenter.shared.requestAuthorization(for: .individual)
             isAuthorized = AuthorizationCenter.shared.authorizationStatus == .approved
         } catch {
-            print("[Grounded] Authorization failed: \(error)")
             isAuthorized = false
         }
     }
@@ -202,7 +197,6 @@ class BlockingManager {
     // MARK: - Shields
 
     func applyShields(_ profile: BlockProfile) {
-        print("[Grounded] applyShields — authorized: \(isAuthorized), domains: \(profile.blockedDomains.count), selectionData: \(profile.activitySelectionData?.count ?? 0) bytes")
         guard isAuthorized else { return }
 
         store.webContent.blockedByFilter = profile.blockedDomains.isEmpty
@@ -214,7 +208,6 @@ class BlockingManager {
             includeEntireCategory: profile.activityIncludeEntireCategory
         ) {
             let allowed = ActivitySelectionHelpers.decodeAllowedTokens(from: profile.allowedApplicationTokensData)
-            print("[Grounded] Decoded — apps: \(selection.applicationTokens.count), categories: \(selection.categoryTokens.count), allowedExceptions: \(allowed.count), webDomains: \(selection.webDomainTokens.count), includeEntireCategory: \(selection.includeEntireCategory)")
             ActivitySelectionHelpers.applyShield(
                 selection: selection,
                 allowedExceptions: allowed,
@@ -266,7 +259,6 @@ class BlockingManager {
         }
 
         guard isAuthorized else {
-            print("[Grounded] syncSchedule skipped for '\(profile.name)' — not authorized for Screen Time.")
             return
         }
 
@@ -293,15 +285,12 @@ class BlockingManager {
                 do {
                     try center.startMonitoring(name, during: schedule)
                     registeredNames.append(name.rawValue)
-                    print("[Grounded] Monitoring \(name.rawValue) — \(block.summary)")
                 } catch {
-                    print("[Grounded] Failed to start monitoring \(name.rawValue): \(error)")
                 }
             }
         }
 
         ProfileStore.saveActivityNames(registeredNames, forProfileID: profile.id)
-        print("[Grounded] syncSchedule — registered \(registeredNames.count) activity windows for '\(profile.name)'")
         evaluateScheduledActivation()
     }
 
