@@ -34,4 +34,4 @@ If this policy changes in a meaningful way, the updated date at the top of this 
 
 ## Contact
 
-Questions? Reach us at: colson1111@gmail.com
+Questions? Reach us at: grounded.app.ios@gmail.com

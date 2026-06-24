@@ -4,6 +4,7 @@
 - **Name:** Grounded
 - **Price:** $2.99 (one-time)
 - **Bundle ID:** com.craig.grounded
+- **Support email:** grounded.app.ios@gmail.com
 
 ## Short Description (170 chars)
 Put the phone down. Grounded blocks distracting apps and sites on a schedule or on demand, and asks for a small moment of intention before you return.
