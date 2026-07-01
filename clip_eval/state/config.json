@@ -1,0 +1,7 @@
+{
+  "model": "MobileCLIP-S1",
+  "pretrained": "datacompdr",
+  "top_k": 10,
+  "min_sim": 0.0,
+  "prompt_strategy": "multi"
+}

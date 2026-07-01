@@ -1,0 +1,441 @@
+[
+  {
+    "id": "refrigerator",
+    "display_name": "Refrigerator",
+    "prompts": [
+      "a photo of a refrigerator",
+      "a refrigerator in a kitchen",
+      "a large kitchen appliance for storing food"
+    ]
+  },
+  {
+    "id": "toilet",
+    "display_name": "Toilet",
+    "prompts": [
+      "a photo of a toilet",
+      "a toilet in a bathroom",
+      "a porcelain toilet fixture"
+    ]
+  },
+  {
+    "id": "bathtub",
+    "display_name": "Bathtub",
+    "prompts": [
+      "a photo of a bathtub",
+      "a bathtub in a bathroom",
+      "a large tub for bathing"
+    ]
+  },
+  {
+    "id": "piano",
+    "display_name": "Piano",
+    "prompts": [
+      "a photo of a piano",
+      "an upright piano",
+      "a grand piano or keyboard instrument"
+    ]
+  },
+  {
+    "id": "bicycle",
+    "display_name": "Bicycle",
+    "prompts": [
+      "a photo of a bicycle",
+      "a bicycle parked outdoors",
+      "a two-wheeled pedal bike"
+    ]
+  },
+  {
+    "id": "fire_extinguisher",
+    "display_name": "Fire Extinguisher",
+    "prompts": [
+      "a photo of a fire hydrant on a street",
+      "a red fire hydrant on a sidewalk"
+    ]
+  },
+  {
+    "id": "washing_machine",
+    "display_name": "Washing Machine",
+    "prompts": [
+      "a photo of a washing machine",
+      "a front-loading or top-loading washing machine",
+      "a laundry appliance"
+    ]
+  },
+  {
+    "id": "treadmill",
+    "display_name": "Treadmill",
+    "prompts": [
+      "a photo of a treadmill",
+      "an exercise treadmill",
+      "a running machine for indoor exercise"
+    ]
+  },
+  {
+    "id": "guitar",
+    "display_name": "Guitar",
+    "prompts": [
+      "a photo of a guitar",
+      "an acoustic or electric guitar",
+      "a stringed musical instrument"
+    ]
+  },
+  {
+    "id": "bookshelf",
+    "display_name": "Bookshelf",
+    "prompts": [
+      "a photo of books",
+      "a room with books and shelves"
+    ]
+  },
+  {
+    "id": "microwave",
+    "display_name": "Microwave",
+    "prompts": [
+      "a photo of a microwave oven",
+      "a countertop microwave",
+      "a kitchen appliance for heating food"
+    ]
+  },
+  {
+    "id": "dishwasher",
+    "display_name": "Dishwasher",
+    "prompts": [
+      "a photo of a dishwasher",
+      "a built-in kitchen dishwasher",
+      "a dishwashing appliance"
+    ]
+  },
+  {
+    "id": "television",
+    "display_name": "Television",
+    "prompts": [
+      "a photo of a television",
+      "a flat screen TV on a wall or stand"
+    ]
+  },
+  {
+    "id": "desk",
+    "display_name": "Desk",
+    "prompts": [
+      "a photo of a desk",
+      "an office or study desk",
+      "a work surface with drawers"
+    ]
+  },
+  {
+    "id": "bed",
+    "display_name": "Bed",
+    "prompts": [
+      "a photo of a bed",
+      "a bed in a bedroom with pillows and sheets"
+    ]
+  },
+  {
+    "id": "sofa",
+    "display_name": "Sofa",
+    "prompts": [
+      "a photo of a couch",
+      "a sofa or couch in a living room"
+    ]
+  },
+  {
+    "id": "dining_table",
+    "display_name": "Dining Table",
+    "prompts": [
+      "a photo of a dining table",
+      "a wooden dining table with chairs",
+      "a kitchen or dining room table"
+    ]
+  },
+  {
+    "id": "car",
+    "display_name": "Car",
+    "prompts": [
+      "a photo of a car",
+      "a car parked on a street",
+      "an automobile on a road"
+    ]
+  },
+  {
+    "id": "motorcycle",
+    "display_name": "Motorcycle",
+    "prompts": [
+      "a photo of a motorcycle",
+      "a parked motorcycle",
+      "a two-wheeled motorized vehicle"
+    ]
+  },
+  {
+    "id": "barbecue_grill",
+    "display_name": "Barbecue Grill",
+    "prompts": [
+      "a photo of a barbecue grill",
+      "an outdoor BBQ grill",
+      "a charcoal or gas grill on a patio"
+    ]
+  },
+  {
+    "id": "drum_kit",
+    "display_name": "Drum Kit",
+    "prompts": [
+      "a photo of a drum kit",
+      "a full drum set with cymbals",
+      "a percussion instrument set"
+    ]
+  },
+  {
+    "id": "exercise_bike",
+    "display_name": "Exercise Bike",
+    "prompts": [
+      "a photo of an exercise bike",
+      "a stationary bicycle for indoor exercise",
+      "a spin bike or cycling machine in a gym"
+    ]
+  },
+  {
+    "id": "weight_rack",
+    "display_name": "Weight Rack",
+    "prompts": [
+      "a photo of a weight rack",
+      "a dumbbell or barbell weight rack",
+      "a gym weight storage rack"
+    ]
+  },
+  {
+    "id": "ladder",
+    "display_name": "Ladder",
+    "prompts": [
+      "a photo of a ladder",
+      "a step ladder or extension ladder",
+      "an aluminum or wooden ladder leaning against a wall"
+    ]
+  },
+  {
+    "id": "lawnmower",
+    "display_name": "Lawnmower",
+    "prompts": [
+      "a photo of a lawnmower",
+      "a gas or electric push lawnmower",
+      "a grass-cutting machine"
+    ]
+  },
+  {
+    "id": "power_drill",
+    "display_name": "Power Drill",
+    "prompts": [
+      "a photo of a power drill",
+      "a cordless electric drill",
+      "a hand-held power tool for drilling"
+    ]
+  },
+  {
+    "id": "toolbox",
+    "display_name": "Toolbox",
+    "prompts": [
+      "a photo of a toolbox",
+      "a metal or plastic toolbox with tools inside",
+      "a portable tool storage box"
+    ]
+  },
+  {
+    "id": "filing_cabinet",
+    "display_name": "Filing Cabinet",
+    "prompts": [
+      "a photo of a filing cabinet",
+      "a metal filing cabinet with drawers",
+      "an office document storage cabinet"
+    ]
+  },
+  {
+    "id": "printer",
+    "display_name": "Printer",
+    "prompts": [
+      "a photo of a printer",
+      "a desktop inkjet or laser printer",
+      "an office printing machine"
+    ]
+  },
+  {
+    "id": "whiteboard",
+    "display_name": "Whiteboard",
+    "prompts": [
+      "a photo of a whiteboard",
+      "a large whiteboard mounted on a wall",
+      "a dry-erase board with markers"
+    ]
+  },
+  {
+    "id": "coat_rack",
+    "display_name": "Coat Rack",
+    "prompts": [
+      "a photo of a coat rack",
+      "a freestanding coat and hat rack",
+      "a hallway coat hanger stand"
+    ]
+  },
+  {
+    "id": "trash_can",
+    "display_name": "Trash Can",
+    "prompts": [
+      "a photo of a trash can",
+      "a large outdoor garbage bin",
+      "a wheeled trash receptacle"
+    ]
+  },
+  {
+    "id": "garden_hose",
+    "display_name": "Garden Hose",
+    "prompts": [
+      "a photo of a garden hose",
+      "a coiled garden hose on a hose reel",
+      "an outdoor water hose"
+    ]
+  },
+  {
+    "id": "park_bench",
+    "display_name": "Park Bench",
+    "prompts": [
+      "a photo of a bench",
+      "a person sitting on a bench outdoors"
+    ]
+  },
+  {
+    "id": "mailbox",
+    "display_name": "Mailbox",
+    "prompts": [
+      "a photo of a mailbox",
+      "a residential mailbox at the end of a driveway",
+      "a metal post mailbox"
+    ]
+  },
+  {
+    "id": "fire_hydrant",
+    "display_name": "Fire Hydrant",
+    "prompts": [
+      "a photo of a fire hydrant",
+      "a red or yellow fire hydrant on a street",
+      "a fire hydrant on a sidewalk next to a road"
+    ]
+  },
+  {
+    "id": "stop_sign",
+    "display_name": "Stop Sign",
+    "prompts": [
+      "a photo of a stop sign",
+      "a red octagonal stop sign on a street"
+    ]
+  },
+  {
+    "id": "parking_meter",
+    "display_name": "Parking Meter",
+    "prompts": [
+      "a photo of a parking meter",
+      "a meter on a post for paid parking"
+    ]
+  },
+  {
+    "id": "traffic_light",
+    "display_name": "Traffic Light",
+    "prompts": [
+      "a photo of a traffic light",
+      "a traffic signal with red, yellow, and green lights",
+      "a street traffic control light"
+    ]
+  },
+  {
+    "id": "bench_press",
+    "display_name": "Bench Press",
+    "prompts": [
+      "a photo of a bench in a park",
+      "a person sitting on a park bench"
+    ]
+  },
+  {
+    "id": "kayak",
+    "display_name": "Kayak",
+    "prompts": [
+      "a photo of a kayak",
+      "a kayak on a shore or in water",
+      "a narrow paddle boat"
+    ]
+  },
+  {
+    "id": "surfboard",
+    "display_name": "Surfboard",
+    "prompts": [
+      "a photo of a surfboard",
+      "a surfboard propped against a wall or on a beach",
+      "a longboard or shortboard surfboard"
+    ]
+  },
+  {
+    "id": "tent",
+    "display_name": "Camping Tent",
+    "prompts": [
+      "a photo of a camping tent",
+      "a tent pitched outdoors",
+      "a dome tent at a campsite"
+    ]
+  },
+  {
+    "id": "wheelchair",
+    "display_name": "Wheelchair",
+    "prompts": [
+      "a photo of a kitchen or dining room",
+      "a kitchen with appliances and a dining table"
+    ]
+  },
+  {
+    "id": "stroller",
+    "display_name": "Baby Stroller",
+    "prompts": [
+      "a photo of a baby stroller",
+      "a folded or open baby stroller",
+      "a pram or pushchair for infants"
+    ]
+  },
+  {
+    "id": "vending_machine",
+    "display_name": "Vending Machine",
+    "prompts": [
+      "a photo of a vending machine",
+      "a snack or drink vending machine",
+      "an automated vending machine with products inside"
+    ]
+  },
+  {
+    "id": "safe",
+    "display_name": "Safe",
+    "prompts": [
+      "a photo of a safe",
+      "a home or office security safe",
+      "a heavy metal safe with a combination lock"
+    ]
+  },
+  {
+    "id": "grandfather_clock",
+    "display_name": "Grandfather Clock",
+    "prompts": [
+      "a photo of a clock",
+      "a room with a clock on the wall"
+    ]
+  },
+  {
+    "id": "aquarium",
+    "display_name": "Aquarium",
+    "prompts": [
+      "a photo of an aquarium",
+      "a large fish tank with fish and plants",
+      "a home or office aquarium"
+    ]
+  },
+  {
+    "id": "ironing_board",
+    "display_name": "Ironing Board",
+    "prompts": [
+      "a photo of an ironing board",
+      "an open ironing board with an iron on top",
+      "a folding ironing board"
+    ]
+  }
+]

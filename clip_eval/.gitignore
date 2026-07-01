@@ -1,0 +1,6 @@
+data/annotations/
+data/annotations_trainval2017.zip
+data/__pycache__/
+eval/__pycache__/
+__pycache__/
+*.pyc
