@@ -1,7 +1,6 @@
 import Foundation
 import AVFoundation
 import CoreImage
-import Vision
 import Combine
 
 class ObjectRecognitionManager: NSObject, ObservableObject {
@@ -26,6 +25,10 @@ class ObjectRecognitionManager: NSObject, ObservableObject {
     private var lastActivatedProfileID: String?
     private var isSessionConfigured = false
     private let ciContext = CIContext()
+
+    // Frame-skip so CLIP (slower than VNClassify) doesn't back up the queue
+    private var frameCounter = 0
+    private let classifyEveryNFrames = 3
 
     private override init() {
         super.init()
@@ -98,7 +101,7 @@ class ObjectRecognitionManager: NSObject, ObservableObject {
         }
     }
 
-    /// Anchor setup: center-crop + full frame, lower threshold, more candidates.
+    /// Anchor setup: classify latest frame, returning top CLIP matches.
     func classifyLatestFrame(forAnchorCapture: Bool = true) async -> [(label: String, confidence: Float)] {
         await withCheckedContinuation { continuation in
             sessionQueue.async { [weak self] in
@@ -115,81 +118,12 @@ class ObjectRecognitionManager: NSObject, ObservableObject {
                 }
                 self.bufferLock.unlock()
 
-                let minConfidence: Float = forAnchorCapture ? 0.01 : 0.05
-                let maxResults = forAnchorCapture ? 40 : 15
-                let buffers: [CVPixelBuffer]
-                if forAnchorCapture,
-                   let cropped = self.centerCroppedPixelBuffer(from: pixelBuffer, fraction: 0.72) {
-                    buffers = [cropped, pixelBuffer]
-                } else {
-                    buffers = [pixelBuffer]
-                }
-
-                let results = self.rankClassifications(
-                    in: buffers,
-                    minConfidence: minConfidence,
-                    maxResults: maxResults
-                )
+                let topK = forAnchorCapture ? 20 : 10
+                let results = CLIPClassifier.shared.classify(pixelBuffer: pixelBuffer, topK: topK)
+                    .map { (label: $0.id, confidence: $0.similarity) }
                 continuation.resume(returning: results)
             }
         }
-    }
-
-    private func rankClassifications(
-        in buffers: [CVPixelBuffer],
-        minConfidence: Float,
-        maxResults: Int
-    ) -> [(label: String, confidence: Float)] {
-        var scores: [String: Float] = [:]
-
-        for (index, buffer) in buffers.enumerated() {
-            let request = VNClassifyImageRequest()
-            let handler = VNImageRequestHandler(cvPixelBuffer: buffer, orientation: .up)
-            try? handler.perform([request])
-
-            guard let observations = request.results as? [VNClassificationObservation] else { continue }
-            let cropBoost: Float = index == 0 && buffers.count > 1 ? 1.15 : 1.0
-            for observation in observations where !VisionLabelCatalog.isExcluded(observation.identifier) {
-                let boosted = min(observation.confidence * cropBoost, 1.0)
-                let key = observation.identifier
-                scores[key] = max(scores[key] ?? 0, boosted)
-            }
-        }
-
-        return scores
-            .filter { $0.value >= minConfidence }
-            .sorted { $0.value > $1.value }
-            .prefix(maxResults)
-            .map { (label: $0.key, confidence: $0.value) }
-    }
-
-    private func centerCroppedPixelBuffer(from source: CVPixelBuffer, fraction: CGFloat) -> CVPixelBuffer? {
-        let ciImage = CIImage(cvPixelBuffer: source)
-        let extent = ciImage.extent
-        guard extent.width > 1, extent.height > 1 else { return nil }
-
-        let cropWidth = extent.width * fraction
-        let cropHeight = extent.height * fraction
-        let cropRect = CGRect(
-            x: extent.midX - cropWidth / 2,
-            y: extent.midY - cropHeight / 2,
-            width: cropWidth,
-            height: cropHeight
-        )
-
-        let cropped = ciImage.cropped(to: cropRect)
-        var output: CVPixelBuffer?
-        let status = CVPixelBufferCreate(
-            kCFAllocatorDefault,
-            Int(cropWidth),
-            Int(cropHeight),
-            CVPixelBufferGetPixelFormatType(source),
-            nil,
-            &output
-        )
-        guard status == kCVReturnSuccess, let output else { return nil }
-        ciContext.render(cropped, to: output)
-        return output
     }
 }
 
@@ -203,37 +137,30 @@ extension ObjectRecognitionManager: AVCaptureVideoDataOutputSampleBufferDelegate
         latestPixelBuffer = pixelBuffer
         bufferLock.unlock()
 
-        let request = VNClassifyImageRequest { [weak self] req, _ in
-            guard let self,
-                  let results = req.results as? [VNClassificationObservation]
-            else { return }
+        // Run CLIP every N frames to avoid queue saturation
+        frameCounter += 1
+        guard frameCounter % classifyEveryNFrames == 0 else { return }
 
-            let top = results
-                .filter { $0.confidence > 0.05 && !VisionLabelCatalog.isExcluded($0.identifier) }
-                .prefix(8)
-                .map { (label: $0.identifier, confidence: $0.confidence) }
+        let results = CLIPClassifier.shared.classify(pixelBuffer: pixelBuffer, topK: 10)
+        let top = results.map { (label: $0.id, confidence: $0.similarity) }
 
-            DispatchQueue.main.async {
-                self.topResults = Array(top)
-                if self.activationEnabled {
-                    for result in top where result.confidence >= 0.2 {
-                        self.checkTriggers(label: result.label, confidence: result.confidence)
-                    }
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            self.topResults = top
+            if self.activationEnabled {
+                for result in top {
+                    self.checkTriggers(label: result.label, confidence: result.confidence)
                 }
             }
         }
-
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up)
-        try? handler.perform([request])
     }
 
     private func checkTriggers(label: String, confidence: Float) {
-        guard confidence >= 0.2 else { return }
         let blocking = BlockingManager.shared
         let active = blocking.activeProfile
 
         guard active.isActive,
-              active.anchorObjects.contains(where: { VisionLabelCatalog.matches(stored: $0, detected: label) })
+              active.anchorObjects.contains(where: { $0 == label })
         else { return }
 
         let off = BlockProfile.off
