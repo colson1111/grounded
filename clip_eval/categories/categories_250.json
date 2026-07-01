@@ -1,0 +1,2387 @@
+[
+  {
+    "id": "refrigerator",
+    "display_name": "Refrigerator",
+    "prompts": [
+      "a photo of a refrigerator",
+      "a refrigerator in a kitchen",
+      "a large kitchen appliance for storing food"
+    ]
+  },
+  {
+    "id": "toilet",
+    "display_name": "Toilet",
+    "prompts": [
+      "a photo of a toilet",
+      "a toilet in a bathroom",
+      "a porcelain toilet fixture"
+    ]
+  },
+  {
+    "id": "bathtub",
+    "display_name": "Bathtub",
+    "prompts": [
+      "a photo of a bathtub",
+      "a bathtub in a bathroom",
+      "a large tub for bathing"
+    ]
+  },
+  {
+    "id": "piano",
+    "display_name": "Piano",
+    "prompts": [
+      "a photo of a piano",
+      "an upright piano",
+      "a grand piano or keyboard instrument"
+    ]
+  },
+  {
+    "id": "bicycle",
+    "display_name": "Bicycle",
+    "prompts": [
+      "a photo of a bicycle",
+      "a bicycle parked outdoors",
+      "a two-wheeled pedal bike"
+    ]
+  },
+  {
+    "id": "fire_extinguisher",
+    "display_name": "Fire Extinguisher",
+    "prompts": [
+      "a photo of a fire extinguisher",
+      "a red fire extinguisher mounted on a wall",
+      "a portable fire extinguisher cylinder"
+    ]
+  },
+  {
+    "id": "washing_machine",
+    "display_name": "Washing Machine",
+    "prompts": [
+      "a photo of a washing machine",
+      "a front-loading or top-loading washing machine",
+      "a laundry appliance"
+    ]
+  },
+  {
+    "id": "treadmill",
+    "display_name": "Treadmill",
+    "prompts": [
+      "a photo of a treadmill",
+      "an exercise treadmill",
+      "a running machine for indoor exercise"
+    ]
+  },
+  {
+    "id": "guitar",
+    "display_name": "Guitar",
+    "prompts": [
+      "a photo of a guitar",
+      "an acoustic or electric guitar",
+      "a stringed musical instrument"
+    ]
+  },
+  {
+    "id": "bookshelf",
+    "display_name": "Bookshelf",
+    "prompts": [
+      "a photo of a bookshelf",
+      "a bookshelf filled with books",
+      "a wooden bookcase in a room"
+    ]
+  },
+  {
+    "id": "microwave",
+    "display_name": "Microwave",
+    "prompts": [
+      "a photo of a microwave oven",
+      "a countertop microwave",
+      "a kitchen appliance for heating food"
+    ]
+  },
+  {
+    "id": "dishwasher",
+    "display_name": "Dishwasher",
+    "prompts": [
+      "a photo of a dishwasher",
+      "a built-in kitchen dishwasher",
+      "a dishwashing appliance"
+    ]
+  },
+  {
+    "id": "television",
+    "display_name": "Television",
+    "prompts": [
+      "a photo of a television",
+      "a flat screen TV on a wall or stand",
+      "a large television set in a living room"
+    ]
+  },
+  {
+    "id": "desk",
+    "display_name": "Desk",
+    "prompts": [
+      "a photo of a desk",
+      "an office or study desk",
+      "a work surface with drawers"
+    ]
+  },
+  {
+    "id": "bed",
+    "display_name": "Bed",
+    "prompts": [
+      "a photo of a bed",
+      "a bed in a bedroom with pillows and sheets",
+      "a made bed with a headboard"
+    ]
+  },
+  {
+    "id": "sofa",
+    "display_name": "Sofa",
+    "prompts": [
+      "a photo of a sofa",
+      "a sofa in a living room",
+      "an upholstered couch with cushions"
+    ]
+  },
+  {
+    "id": "dining_table",
+    "display_name": "Dining Table",
+    "prompts": [
+      "a photo of a dining table",
+      "a wooden dining table with chairs",
+      "a kitchen or dining room table"
+    ]
+  },
+  {
+    "id": "car",
+    "display_name": "Car",
+    "prompts": [
+      "a photo of a car",
+      "a car parked on a street",
+      "an automobile on a road"
+    ]
+  },
+  {
+    "id": "motorcycle",
+    "display_name": "Motorcycle",
+    "prompts": [
+      "a photo of a motorcycle",
+      "a parked motorcycle",
+      "a two-wheeled motorized vehicle"
+    ]
+  },
+  {
+    "id": "barbecue_grill",
+    "display_name": "Barbecue Grill",
+    "prompts": [
+      "a photo of a barbecue grill",
+      "an outdoor BBQ grill",
+      "a charcoal or gas grill on a patio"
+    ]
+  },
+  {
+    "id": "drum_kit",
+    "display_name": "Drum Kit",
+    "prompts": [
+      "a photo of a drum kit",
+      "a full drum set with cymbals",
+      "a percussion instrument set"
+    ]
+  },
+  {
+    "id": "exercise_bike",
+    "display_name": "Exercise Bike",
+    "prompts": [
+      "a photo of an exercise bike",
+      "a stationary bicycle for indoor exercise",
+      "a spin bike or cycling machine in a gym"
+    ]
+  },
+  {
+    "id": "weight_rack",
+    "display_name": "Weight Rack",
+    "prompts": [
+      "a photo of a weight rack",
+      "a dumbbell or barbell weight rack",
+      "a gym weight storage rack"
+    ]
+  },
+  {
+    "id": "ladder",
+    "display_name": "Ladder",
+    "prompts": [
+      "a photo of a ladder",
+      "a step ladder or extension ladder",
+      "an aluminum or wooden ladder leaning against a wall"
+    ]
+  },
+  {
+    "id": "lawnmower",
+    "display_name": "Lawnmower",
+    "prompts": [
+      "a photo of a lawnmower",
+      "a gas or electric push lawnmower",
+      "a grass-cutting machine"
+    ]
+  },
+  {
+    "id": "power_drill",
+    "display_name": "Power Drill",
+    "prompts": [
+      "a photo of a power drill",
+      "a cordless electric drill",
+      "a hand-held power tool for drilling"
+    ]
+  },
+  {
+    "id": "toolbox",
+    "display_name": "Toolbox",
+    "prompts": [
+      "a photo of a toolbox",
+      "a metal or plastic toolbox with tools inside",
+      "a portable tool storage box"
+    ]
+  },
+  {
+    "id": "filing_cabinet",
+    "display_name": "Filing Cabinet",
+    "prompts": [
+      "a photo of a filing cabinet",
+      "a metal filing cabinet with drawers",
+      "an office document storage cabinet"
+    ]
+  },
+  {
+    "id": "printer",
+    "display_name": "Printer",
+    "prompts": [
+      "a photo of a printer",
+      "a desktop inkjet or laser printer",
+      "an office printing machine"
+    ]
+  },
+  {
+    "id": "whiteboard",
+    "display_name": "Whiteboard",
+    "prompts": [
+      "a photo of a whiteboard",
+      "a large whiteboard mounted on a wall",
+      "a dry-erase board with markers"
+    ]
+  },
+  {
+    "id": "coat_rack",
+    "display_name": "Coat Rack",
+    "prompts": [
+      "a photo of a coat rack",
+      "a freestanding coat and hat rack",
+      "a hallway coat hanger stand"
+    ]
+  },
+  {
+    "id": "trash_can",
+    "display_name": "Trash Can",
+    "prompts": [
+      "a photo of a trash can",
+      "a large outdoor garbage bin",
+      "a wheeled trash receptacle"
+    ]
+  },
+  {
+    "id": "garden_hose",
+    "display_name": "Garden Hose",
+    "prompts": [
+      "a photo of a garden hose",
+      "a coiled garden hose on a hose reel",
+      "an outdoor water hose"
+    ]
+  },
+  {
+    "id": "park_bench",
+    "display_name": "Park Bench",
+    "prompts": [
+      "a photo of a park bench",
+      "a wooden bench in a park",
+      "an outdoor bench along a path"
+    ]
+  },
+  {
+    "id": "mailbox",
+    "display_name": "Mailbox",
+    "prompts": [
+      "a photo of a mailbox",
+      "a residential mailbox at the end of a driveway",
+      "a metal post mailbox"
+    ]
+  },
+  {
+    "id": "fire_hydrant",
+    "display_name": "Fire Hydrant",
+    "prompts": [
+      "a photo of a fire hydrant",
+      "a red or yellow fire hydrant on a street",
+      "a fire hydrant on a sidewalk next to a road"
+    ]
+  },
+  {
+    "id": "stop_sign",
+    "display_name": "Stop Sign",
+    "prompts": [
+      "a photo of a stop sign",
+      "a red octagonal stop sign on a street",
+      "a stop sign at an intersection"
+    ]
+  },
+  {
+    "id": "parking_meter",
+    "display_name": "Parking Meter",
+    "prompts": [
+      "a photo of a parking meter",
+      "a meter on a post for paid parking",
+      "a coin-operated parking meter on a sidewalk"
+    ]
+  },
+  {
+    "id": "traffic_light",
+    "display_name": "Traffic Light",
+    "prompts": [
+      "a photo of a traffic light",
+      "a traffic signal with red, yellow, and green lights",
+      "a street traffic control light"
+    ]
+  },
+  {
+    "id": "bench_press",
+    "display_name": "Bench Press",
+    "prompts": [
+      "a photo of a bench press",
+      "a weight bench with a barbell for bench pressing",
+      "a flat bench press machine in a gym"
+    ]
+  },
+  {
+    "id": "kayak",
+    "display_name": "Kayak",
+    "prompts": [
+      "a photo of a kayak",
+      "a kayak on a shore or in water",
+      "a narrow paddle boat"
+    ]
+  },
+  {
+    "id": "surfboard",
+    "display_name": "Surfboard",
+    "prompts": [
+      "a photo of a surfboard",
+      "a surfboard propped against a wall or on a beach",
+      "a longboard or shortboard surfboard"
+    ]
+  },
+  {
+    "id": "tent",
+    "display_name": "Camping Tent",
+    "prompts": [
+      "a photo of a camping tent",
+      "a tent pitched outdoors",
+      "a dome tent at a campsite"
+    ]
+  },
+  {
+    "id": "wheelchair",
+    "display_name": "Wheelchair",
+    "prompts": [
+      "a photo of a wheelchair",
+      "a manual wheelchair with wheels and handles",
+      "a close-up of a wheelchair"
+    ]
+  },
+  {
+    "id": "stroller",
+    "display_name": "Baby Stroller",
+    "prompts": [
+      "a photo of a baby stroller",
+      "a folded or open baby stroller",
+      "a pram or pushchair for infants"
+    ]
+  },
+  {
+    "id": "vending_machine",
+    "display_name": "Vending Machine",
+    "prompts": [
+      "a photo of a vending machine",
+      "a snack or drink vending machine",
+      "an automated vending machine with products inside"
+    ]
+  },
+  {
+    "id": "safe",
+    "display_name": "Safe",
+    "prompts": [
+      "a photo of a safe",
+      "a home or office security safe",
+      "a heavy metal safe with a combination lock"
+    ]
+  },
+  {
+    "id": "grandfather_clock",
+    "display_name": "Grandfather Clock",
+    "prompts": [
+      "a photo of a grandfather clock",
+      "a tall freestanding grandfather clock",
+      "a pendulum clock in a wooden case"
+    ]
+  },
+  {
+    "id": "aquarium",
+    "display_name": "Aquarium",
+    "prompts": [
+      "a photo of an aquarium",
+      "a large fish tank with fish and plants",
+      "a home or office aquarium"
+    ]
+  },
+  {
+    "id": "ironing_board",
+    "display_name": "Ironing Board",
+    "prompts": [
+      "a photo of an ironing board",
+      "an open ironing board with an iron on top",
+      "a folding ironing board"
+    ]
+  },
+  {
+    "id": "toaster",
+    "display_name": "Toaster",
+    "prompts": [
+      "a photo of a toaster",
+      "a kitchen toaster on a counter",
+      "a close-up of a bread toaster"
+    ]
+  },
+  {
+    "id": "oven",
+    "display_name": "Oven",
+    "prompts": [
+      "a photo of an oven",
+      "a kitchen oven with burners",
+      "a built-in oven in a kitchen"
+    ]
+  },
+  {
+    "id": "blender",
+    "display_name": "Blender",
+    "prompts": [
+      "a photo of a blender",
+      "a kitchen blender on a counter",
+      "a close-up of a blender jar"
+    ]
+  },
+  {
+    "id": "coffee_maker",
+    "display_name": "Coffee Maker",
+    "prompts": [
+      "a photo of a coffee maker",
+      "a drip coffee machine on a kitchen counter",
+      "a close-up of a coffee maker"
+    ]
+  },
+  {
+    "id": "stand_mixer",
+    "display_name": "Stand Mixer",
+    "prompts": [
+      "a photo of a stand mixer",
+      "a KitchenAid or stand mixer on a counter",
+      "a close-up of a stand mixer bowl and whisk"
+    ]
+  },
+  {
+    "id": "air_fryer",
+    "display_name": "Air Fryer",
+    "prompts": [
+      "a photo of an air fryer",
+      "an air fryer appliance on a kitchen counter",
+      "a close-up of an air fryer basket"
+    ]
+  },
+  {
+    "id": "rice_cooker",
+    "display_name": "Rice Cooker",
+    "prompts": [
+      "a photo of a rice cooker",
+      "a rice cooker appliance in a kitchen",
+      "a close-up of a rice cooker lid"
+    ]
+  },
+  {
+    "id": "slow_cooker",
+    "display_name": "Slow Cooker",
+    "prompts": [
+      "a photo of a slow cooker",
+      "a crockpot or slow cooker on a counter",
+      "a close-up of a slow cooker pot"
+    ]
+  },
+  {
+    "id": "food_processor",
+    "display_name": "Food Processor",
+    "prompts": [
+      "a photo of a food processor",
+      "a kitchen food processor on a counter",
+      "a close-up of a food processor bowl"
+    ]
+  },
+  {
+    "id": "electric_kettle",
+    "display_name": "Electric Kettle",
+    "prompts": [
+      "a photo of an electric kettle",
+      "an electric kettle on a kitchen counter",
+      "a close-up of a kettle with a handle"
+    ]
+  },
+  {
+    "id": "waffle_maker",
+    "display_name": "Waffle Maker",
+    "prompts": [
+      "a photo of a waffle maker",
+      "a waffle iron on a kitchen counter",
+      "a close-up of a waffle maker with open plates"
+    ]
+  },
+  {
+    "id": "juicer",
+    "display_name": "Juicer",
+    "prompts": [
+      "a photo of a juicer",
+      "a citrus or centrifugal juicer on a counter",
+      "a close-up of a juicer machine"
+    ]
+  },
+  {
+    "id": "range_hood",
+    "display_name": "Range Hood",
+    "prompts": [
+      "a photo of a range hood",
+      "a kitchen range hood above a stove",
+      "a close-up of a vent hood in a kitchen"
+    ]
+  },
+  {
+    "id": "shower_head",
+    "display_name": "Shower Head",
+    "prompts": [
+      "a photo of a shower head",
+      "a shower head in a bathroom",
+      "a close-up of a shower head with water spray"
+    ]
+  },
+  {
+    "id": "bathroom_scale",
+    "display_name": "Bathroom Scale",
+    "prompts": [
+      "a photo of a bathroom scale",
+      "a digital bathroom scale on a floor",
+      "a close-up of a weight scale"
+    ]
+  },
+  {
+    "id": "towel_rack",
+    "display_name": "Towel Rack",
+    "prompts": [
+      "a photo of a towel rack",
+      "a bathroom towel rack with towels hanging",
+      "a close-up of a wall-mounted towel bar"
+    ]
+  },
+  {
+    "id": "plunger",
+    "display_name": "Plunger",
+    "prompts": [
+      "a photo of a plunger",
+      "a rubber plunger next to a toilet",
+      "a close-up of a drain plunger"
+    ]
+  },
+  {
+    "id": "medicine_cabinet",
+    "display_name": "Medicine Cabinet",
+    "prompts": [
+      "a photo of a medicine cabinet",
+      "a bathroom medicine cabinet with mirror",
+      "a wall-mounted medicine cabinet with shelves"
+    ]
+  },
+  {
+    "id": "dresser",
+    "display_name": "Dresser",
+    "prompts": [
+      "a photo of a dresser",
+      "a bedroom dresser with drawers",
+      "a close-up of a wooden chest of drawers"
+    ]
+  },
+  {
+    "id": "wardrobe",
+    "display_name": "Wardrobe",
+    "prompts": [
+      "a photo of a wardrobe",
+      "a freestanding wardrobe closet",
+      "a large wooden wardrobe with doors"
+    ]
+  },
+  {
+    "id": "nightstand",
+    "display_name": "Nightstand",
+    "prompts": [
+      "a photo of a nightstand",
+      "a bedside nightstand next to a bed",
+      "a close-up of a small bedside table"
+    ]
+  },
+  {
+    "id": "alarm_clock",
+    "display_name": "Alarm Clock",
+    "prompts": [
+      "a photo of an alarm clock",
+      "a digital or analog alarm clock on a nightstand",
+      "a close-up of a bedside alarm clock"
+    ]
+  },
+  {
+    "id": "ceiling_fan",
+    "display_name": "Ceiling Fan",
+    "prompts": [
+      "a photo of a ceiling fan",
+      "a ceiling fan mounted in a room",
+      "a close-up of spinning ceiling fan blades"
+    ]
+  },
+  {
+    "id": "fireplace",
+    "display_name": "Fireplace",
+    "prompts": [
+      "a photo of a fireplace",
+      "a brick fireplace in a living room",
+      "a close-up of a lit fireplace with fire"
+    ]
+  },
+  {
+    "id": "floor_lamp",
+    "display_name": "Floor Lamp",
+    "prompts": [
+      "a photo of a floor lamp",
+      "a tall floor lamp in a living room",
+      "a close-up of a standing lamp with shade"
+    ]
+  },
+  {
+    "id": "record_player",
+    "display_name": "Record Player",
+    "prompts": [
+      "a photo of a record player",
+      "a vinyl turntable on a table",
+      "a close-up of a record player with vinyl"
+    ]
+  },
+  {
+    "id": "dart_board",
+    "display_name": "Dart Board",
+    "prompts": [
+      "a photo of a dart board",
+      "a dart board mounted on a wall",
+      "a close-up of a round dart board with darts"
+    ]
+  },
+  {
+    "id": "workbench",
+    "display_name": "Workbench",
+    "prompts": [
+      "a photo of a workbench",
+      "a wooden workbench in a garage or workshop",
+      "a close-up of a cluttered work bench with tools"
+    ]
+  },
+  {
+    "id": "tool_chest",
+    "display_name": "Tool Chest",
+    "prompts": [
+      "a photo of a tool chest",
+      "a rolling tool chest with drawers in a garage",
+      "a close-up of a metal tool cabinet"
+    ]
+  },
+  {
+    "id": "circular_saw",
+    "display_name": "Circular Saw",
+    "prompts": [
+      "a photo of a circular saw",
+      "a power circular saw on a workbench",
+      "a close-up of a circular saw blade"
+    ]
+  },
+  {
+    "id": "air_compressor",
+    "display_name": "Air Compressor",
+    "prompts": [
+      "a photo of an air compressor",
+      "a portable air compressor in a garage",
+      "a close-up of an air compressor tank and hose"
+    ]
+  },
+  {
+    "id": "shop_vac",
+    "display_name": "Shop Vacuum",
+    "prompts": [
+      "a photo of a shop vacuum",
+      "a large shop vac in a garage or workshop",
+      "a close-up of a wet-dry shop vacuum"
+    ]
+  },
+  {
+    "id": "drill_press",
+    "display_name": "Drill Press",
+    "prompts": [
+      "a photo of a drill press",
+      "a benchtop or floor drill press",
+      "a close-up of a drill press in a workshop"
+    ]
+  },
+  {
+    "id": "welding_mask",
+    "display_name": "Welding Mask",
+    "prompts": [
+      "a photo of a welding mask",
+      "a welding helmet or face shield",
+      "a close-up of a dark welding mask visor"
+    ]
+  },
+  {
+    "id": "jack_stand",
+    "display_name": "Jack Stand",
+    "prompts": [
+      "a photo of a jack stand",
+      "metal jack stands holding up a car",
+      "a close-up of a car jack stand"
+    ]
+  },
+  {
+    "id": "garage_door",
+    "display_name": "Garage Door",
+    "prompts": [
+      "a photo of a garage door",
+      "a closed garage door on a house",
+      "a close-up of a sectional garage door"
+    ]
+  },
+  {
+    "id": "wheelbarrow",
+    "display_name": "Wheelbarrow",
+    "prompts": [
+      "a photo of a wheelbarrow",
+      "a garden wheelbarrow on a lawn",
+      "a close-up of a metal wheelbarrow"
+    ]
+  },
+  {
+    "id": "garden_trowel",
+    "display_name": "Garden Trowel",
+    "prompts": [
+      "a photo of a garden trowel",
+      "a hand trowel in a garden or planter",
+      "a close-up of a small gardening trowel"
+    ]
+  },
+  {
+    "id": "rake",
+    "display_name": "Rake",
+    "prompts": [
+      "a photo of a rake",
+      "a garden rake leaning against a fence",
+      "a close-up of a leaf rake"
+    ]
+  },
+  {
+    "id": "sprinkler",
+    "display_name": "Garden Sprinkler",
+    "prompts": [
+      "a photo of a garden sprinkler",
+      "a lawn sprinkler spraying water",
+      "a close-up of a rotating sprinkler head"
+    ]
+  },
+  {
+    "id": "bird_feeder",
+    "display_name": "Bird Feeder",
+    "prompts": [
+      "a photo of a bird feeder",
+      "a bird feeder hanging in a garden",
+      "a close-up of a seed bird feeder with birds"
+    ]
+  },
+  {
+    "id": "patio_umbrella",
+    "display_name": "Patio Umbrella",
+    "prompts": [
+      "a photo of a patio umbrella",
+      "an outdoor patio umbrella over a table",
+      "a close-up of a large garden umbrella"
+    ]
+  },
+  {
+    "id": "greenhouse",
+    "display_name": "Greenhouse",
+    "prompts": [
+      "a photo of a greenhouse",
+      "a glass or plastic greenhouse structure",
+      "a close-up of a small backyard greenhouse"
+    ]
+  },
+  {
+    "id": "compost_bin",
+    "display_name": "Compost Bin",
+    "prompts": [
+      "a photo of a compost bin",
+      "a garden compost bin or tumbler",
+      "a close-up of a plastic compost bin"
+    ]
+  },
+  {
+    "id": "rain_barrel",
+    "display_name": "Rain Barrel",
+    "prompts": [
+      "a photo of a rain barrel",
+      "a rain barrel collecting water from a downspout",
+      "a close-up of a large water collection barrel"
+    ]
+  },
+  {
+    "id": "garden_gnome",
+    "display_name": "Garden Gnome",
+    "prompts": [
+      "a photo of a garden gnome",
+      "a ceramic garden gnome statue in a yard",
+      "a close-up of a colorful gnome figurine"
+    ]
+  },
+  {
+    "id": "paper_shredder",
+    "display_name": "Paper Shredder",
+    "prompts": [
+      "a photo of a paper shredder",
+      "an office paper shredder machine",
+      "a close-up of a document shredder"
+    ]
+  },
+  {
+    "id": "desk_lamp",
+    "display_name": "Desk Lamp",
+    "prompts": [
+      "a photo of a desk lamp",
+      "a desk lamp on an office desk",
+      "a close-up of an adjustable desk lamp"
+    ]
+  },
+  {
+    "id": "office_chair",
+    "display_name": "Office Chair",
+    "prompts": [
+      "a photo of an office chair",
+      "an ergonomic office chair on wheels",
+      "a close-up of a swivel desk chair"
+    ]
+  },
+  {
+    "id": "wall_clock",
+    "display_name": "Wall Clock",
+    "prompts": [
+      "a photo of a wall clock",
+      "a round clock mounted on a wall",
+      "a close-up of a wall-hung analog clock"
+    ]
+  },
+  {
+    "id": "bulletin_board",
+    "display_name": "Bulletin Board",
+    "prompts": [
+      "a photo of a bulletin board",
+      "a cork bulletin board with papers pinned to it",
+      "a close-up of a pin board on a wall"
+    ]
+  },
+  {
+    "id": "globe",
+    "display_name": "Globe",
+    "prompts": [
+      "a photo of a globe",
+      "a decorative or educational globe on a stand",
+      "a close-up of a world globe"
+    ]
+  },
+  {
+    "id": "microscope",
+    "display_name": "Microscope",
+    "prompts": [
+      "a photo of a microscope",
+      "a laboratory microscope on a table",
+      "a close-up of a compound microscope"
+    ]
+  },
+  {
+    "id": "chalkboard",
+    "display_name": "Chalkboard",
+    "prompts": [
+      "a photo of a chalkboard",
+      "a large chalkboard in a classroom",
+      "a close-up of a green or black chalkboard with chalk"
+    ]
+  },
+  {
+    "id": "locker",
+    "display_name": "Locker",
+    "prompts": [
+      "a photo of a locker",
+      "a row of metal lockers in a school or gym",
+      "a close-up of a combination lock locker"
+    ]
+  },
+  {
+    "id": "water_fountain",
+    "display_name": "Water Fountain",
+    "prompts": [
+      "a photo of a water fountain",
+      "a wall-mounted drinking water fountain",
+      "a close-up of a school or office water fountain"
+    ]
+  },
+  {
+    "id": "fire_alarm_pull",
+    "display_name": "Fire Alarm Pull Station",
+    "prompts": [
+      "a photo of a fire alarm pull station",
+      "a red fire alarm pull on a wall",
+      "a close-up of an emergency fire alarm lever"
+    ]
+  },
+  {
+    "id": "barbell",
+    "display_name": "Barbell",
+    "prompts": [
+      "a photo of a barbell",
+      "a barbell with weight plates on a gym floor",
+      "a close-up of a loaded barbell"
+    ]
+  },
+  {
+    "id": "punching_bag",
+    "display_name": "Punching Bag",
+    "prompts": [
+      "a photo of a punching bag",
+      "a heavy punching bag hanging in a gym",
+      "a close-up of a boxing heavy bag"
+    ]
+  },
+  {
+    "id": "rowing_machine",
+    "display_name": "Rowing Machine",
+    "prompts": [
+      "a photo of a rowing machine",
+      "an indoor rowing machine in a gym",
+      "a close-up of a rowing ergometer"
+    ]
+  },
+  {
+    "id": "jump_rope",
+    "display_name": "Jump Rope",
+    "prompts": [
+      "a photo of a jump rope",
+      "a jump rope coiled on a gym floor",
+      "a close-up of a skipping rope with handles"
+    ]
+  },
+  {
+    "id": "medicine_ball",
+    "display_name": "Medicine Ball",
+    "prompts": [
+      "a photo of a medicine ball",
+      "a heavy medicine ball in a gym",
+      "a close-up of a rubber medicine ball"
+    ]
+  },
+  {
+    "id": "foam_roller",
+    "display_name": "Foam Roller",
+    "prompts": [
+      "a photo of a foam roller",
+      "a cylindrical foam roller on a gym floor",
+      "a close-up of a physical therapy foam roller"
+    ]
+  },
+  {
+    "id": "kettlebell",
+    "display_name": "Kettlebell",
+    "prompts": [
+      "a photo of a kettlebell",
+      "a cast iron kettlebell on a gym floor",
+      "a close-up of a kettlebell weight"
+    ]
+  },
+  {
+    "id": "yoga_mat",
+    "display_name": "Yoga Mat",
+    "prompts": [
+      "a photo of a yoga mat",
+      "a rolled or unrolled yoga mat",
+      "a close-up of a yoga mat on a floor"
+    ]
+  },
+  {
+    "id": "climbing_wall",
+    "display_name": "Climbing Wall",
+    "prompts": [
+      "a photo of a climbing wall",
+      "an indoor rock climbing wall with holds",
+      "a close-up of colorful climbing holds on a wall"
+    ]
+  },
+  {
+    "id": "steering_wheel",
+    "display_name": "Steering Wheel",
+    "prompts": [
+      "a photo of a steering wheel",
+      "a car steering wheel from the driver seat",
+      "a close-up of a vehicle steering wheel"
+    ]
+  },
+  {
+    "id": "spare_tire",
+    "display_name": "Spare Tire",
+    "prompts": [
+      "a photo of a spare tire",
+      "a spare tire leaning against a wall or car",
+      "a close-up of an unmounted car tire"
+    ]
+  },
+  {
+    "id": "jumper_cables",
+    "display_name": "Jumper Cables",
+    "prompts": [
+      "a photo of jumper cables",
+      "a pair of jumper cables with clamps",
+      "a close-up of battery booster cables"
+    ]
+  },
+  {
+    "id": "gas_pump",
+    "display_name": "Gas Pump",
+    "prompts": [
+      "a photo of a gas pump",
+      "a fuel pump at a gas station",
+      "a close-up of a gas station fuel nozzle"
+    ]
+  },
+  {
+    "id": "violin",
+    "display_name": "Violin",
+    "prompts": [
+      "a photo of a violin",
+      "a violin with bow on a stand",
+      "a close-up of a violin instrument"
+    ]
+  },
+  {
+    "id": "trumpet",
+    "display_name": "Trumpet",
+    "prompts": [
+      "a photo of a trumpet",
+      "a brass trumpet on a stand",
+      "a close-up of a trumpet bell"
+    ]
+  },
+  {
+    "id": "xylophone",
+    "display_name": "Xylophone",
+    "prompts": [
+      "a photo of a xylophone",
+      "a xylophone with colored bars and mallets",
+      "a close-up of a xylophone instrument"
+    ]
+  },
+  {
+    "id": "cello",
+    "display_name": "Cello",
+    "prompts": [
+      "a photo of a cello",
+      "a cello on a stand in a room",
+      "a close-up of a cello instrument with bow"
+    ]
+  },
+  {
+    "id": "tuba",
+    "display_name": "Tuba",
+    "prompts": [
+      "a photo of a tuba",
+      "a large brass tuba instrument",
+      "a close-up of a tuba bell"
+    ]
+  },
+  {
+    "id": "accordion",
+    "display_name": "Accordion",
+    "prompts": [
+      "a photo of an accordion",
+      "a person holding an accordion",
+      "a close-up of an accordion with bellows"
+    ]
+  },
+  {
+    "id": "first_aid_kit",
+    "display_name": "First Aid Kit",
+    "prompts": [
+      "a photo of a first aid kit",
+      "a red first aid kit box or bag",
+      "a close-up of an opened first aid kit"
+    ]
+  },
+  {
+    "id": "defibrillator",
+    "display_name": "Defibrillator (AED)",
+    "prompts": [
+      "a photo of an AED defibrillator",
+      "a wall-mounted AED defibrillator unit",
+      "a close-up of an automated external defibrillator"
+    ]
+  },
+  {
+    "id": "crutches",
+    "display_name": "Crutches",
+    "prompts": [
+      "a photo of crutches",
+      "a pair of crutches leaning against a wall",
+      "a close-up of forearm crutches"
+    ]
+  },
+  {
+    "id": "stethoscope",
+    "display_name": "Stethoscope",
+    "prompts": [
+      "a photo of a stethoscope",
+      "a medical stethoscope coiled on a surface",
+      "a close-up of a doctor's stethoscope"
+    ]
+  },
+  {
+    "id": "blood_pressure_monitor",
+    "display_name": "Blood Pressure Monitor",
+    "prompts": [
+      "a photo of a blood pressure monitor",
+      "a digital blood pressure cuff device",
+      "a close-up of an arm blood pressure monitor"
+    ]
+  },
+  {
+    "id": "birdcage",
+    "display_name": "Birdcage",
+    "prompts": [
+      "a photo of a birdcage",
+      "a decorative birdcage hanging or on a stand",
+      "a close-up of a wire birdcage"
+    ]
+  },
+  {
+    "id": "dog_crate",
+    "display_name": "Dog Crate",
+    "prompts": [
+      "a photo of a dog crate",
+      "a metal wire dog crate or kennel",
+      "a close-up of a pet crate"
+    ]
+  },
+  {
+    "id": "beehive",
+    "display_name": "Beehive",
+    "prompts": [
+      "a photo of a beehive",
+      "a wooden beehive box in a yard or field",
+      "a close-up of a Langstroth beehive"
+    ]
+  },
+  {
+    "id": "atm",
+    "display_name": "ATM",
+    "prompts": [
+      "a photo of an ATM",
+      "a bank ATM machine on a street or inside a building",
+      "a close-up of an ATM cash machine"
+    ]
+  },
+  {
+    "id": "recycling_bin",
+    "display_name": "Recycling Bin",
+    "prompts": [
+      "a photo of a recycling bin",
+      "a blue or green recycling bin outdoors",
+      "a close-up of a wheeled recycling container"
+    ]
+  },
+  {
+    "id": "water_tower",
+    "display_name": "Water Tower",
+    "prompts": [
+      "a photo of a water tower",
+      "a large cylindrical water tower on legs",
+      "a close-up of a municipal water tower"
+    ]
+  },
+  {
+    "id": "dryer",
+    "display_name": "Clothes Dryer",
+    "prompts": [
+      "a photo of a clothes dryer",
+      "a laundry dryer next to a washing machine",
+      "a close-up of a drum dryer appliance"
+    ]
+  },
+  {
+    "id": "vacuum_cleaner",
+    "display_name": "Vacuum Cleaner",
+    "prompts": [
+      "a photo of a vacuum cleaner",
+      "an upright or canister vacuum cleaner",
+      "a close-up of a household vacuum"
+    ]
+  },
+  {
+    "id": "sewing_machine",
+    "display_name": "Sewing Machine",
+    "prompts": [
+      "a photo of a sewing machine",
+      "a sewing machine on a table",
+      "a close-up of an electric sewing machine"
+    ]
+  },
+  {
+    "id": "typewriter",
+    "display_name": "Typewriter",
+    "prompts": [
+      "a photo of a typewriter",
+      "a vintage typewriter on a desk",
+      "a close-up of a mechanical typewriter keys"
+    ]
+  },
+  {
+    "id": "telescope",
+    "display_name": "Telescope",
+    "prompts": [
+      "a photo of a telescope",
+      "an astronomical telescope on a tripod",
+      "a close-up of a telescope eyepiece"
+    ]
+  },
+  {
+    "id": "pool_table",
+    "display_name": "Pool Table",
+    "prompts": [
+      "a photo of a pool table",
+      "a billiard table with balls and cues",
+      "a close-up of a green felt pool table"
+    ]
+  },
+  {
+    "id": "ping_pong_table",
+    "display_name": "Ping Pong Table",
+    "prompts": [
+      "a photo of a ping pong table",
+      "a table tennis table with net",
+      "a close-up of a ping pong paddle and ball on a table"
+    ]
+  },
+  {
+    "id": "foosball_table",
+    "display_name": "Foosball Table",
+    "prompts": [
+      "a photo of a foosball table",
+      "a foosball or table soccer game",
+      "a close-up of foosball players on rods"
+    ]
+  },
+  {
+    "id": "pinball_machine",
+    "display_name": "Pinball Machine",
+    "prompts": [
+      "a photo of a pinball machine",
+      "an arcade pinball machine",
+      "a close-up of a pinball playfield"
+    ]
+  },
+  {
+    "id": "arcade_cabinet",
+    "display_name": "Arcade Cabinet",
+    "prompts": [
+      "a photo of an arcade game cabinet",
+      "a classic arcade video game machine",
+      "a close-up of an arcade cabinet with joystick"
+    ]
+  },
+  {
+    "id": "hot_tub",
+    "display_name": "Hot Tub",
+    "prompts": [
+      "a photo of a hot tub",
+      "an outdoor hot tub or jacuzzi",
+      "a close-up of a bubbling hot tub"
+    ]
+  },
+  {
+    "id": "trampoline",
+    "display_name": "Trampoline",
+    "prompts": [
+      "a photo of a trampoline",
+      "a backyard trampoline with safety net",
+      "a close-up of a round trampoline"
+    ]
+  },
+  {
+    "id": "swing_set",
+    "display_name": "Swing Set",
+    "prompts": [
+      "a photo of a swing set",
+      "a children's swing set in a backyard",
+      "a close-up of swings hanging from a frame"
+    ]
+  },
+  {
+    "id": "basketball_hoop",
+    "display_name": "Basketball Hoop",
+    "prompts": [
+      "a photo of a basketball hoop",
+      "a basketball hoop and backboard",
+      "a close-up of a basketball net and rim"
+    ]
+  },
+  {
+    "id": "soccer_goal",
+    "display_name": "Soccer Goal",
+    "prompts": [
+      "a photo of a soccer goal",
+      "a soccer or football goal net on a field",
+      "a close-up of a goal post with netting"
+    ]
+  },
+  {
+    "id": "ice_chest",
+    "display_name": "Cooler / Ice Chest",
+    "prompts": [
+      "a photo of a cooler",
+      "a large plastic cooler or ice chest",
+      "a close-up of an insulated drink cooler"
+    ]
+  },
+  {
+    "id": "backpack",
+    "display_name": "Backpack",
+    "prompts": [
+      "a photo of a backpack",
+      "a hiking or school backpack hanging or on a floor",
+      "a close-up of a large hiking backpack"
+    ]
+  },
+  {
+    "id": "suitcase",
+    "display_name": "Suitcase",
+    "prompts": [
+      "a photo of a suitcase",
+      "a rolling suitcase or luggage bag",
+      "a close-up of a travel suitcase"
+    ]
+  },
+  {
+    "id": "canoe",
+    "display_name": "Canoe",
+    "prompts": [
+      "a photo of a canoe",
+      "a canoe on a shore or in water",
+      "a close-up of a wooden or fiberglass canoe"
+    ]
+  },
+  {
+    "id": "snowboard",
+    "display_name": "Snowboard",
+    "prompts": [
+      "a photo of a snowboard",
+      "a snowboard propped against a wall or in snow",
+      "a close-up of a snowboard with bindings"
+    ]
+  },
+  {
+    "id": "ski",
+    "display_name": "Skis",
+    "prompts": [
+      "a photo of skis",
+      "a pair of skis leaning against a wall",
+      "a close-up of alpine skis with bindings"
+    ]
+  },
+  {
+    "id": "golf_bag",
+    "display_name": "Golf Bag",
+    "prompts": [
+      "a photo of a golf bag",
+      "a golf bag with clubs standing upright",
+      "a close-up of a golf bag on a course"
+    ]
+  },
+  {
+    "id": "fishing_rod",
+    "display_name": "Fishing Rod",
+    "prompts": [
+      "a photo of a fishing rod",
+      "a fishing rod leaning against a wall",
+      "a close-up of a fishing pole and reel"
+    ]
+  },
+  {
+    "id": "candle",
+    "display_name": "Candle",
+    "prompts": [
+      "a photo of a candle",
+      "a lit candle on a table or shelf",
+      "a close-up of a pillar candle flame"
+    ]
+  },
+  {
+    "id": "mirror",
+    "display_name": "Mirror",
+    "prompts": [
+      "a photo of a mirror",
+      "a large wall mirror in a room",
+      "a close-up of a framed hanging mirror"
+    ]
+  },
+  {
+    "id": "picture_frame",
+    "display_name": "Picture Frame",
+    "prompts": [
+      "a photo of a picture frame on a wall",
+      "a framed artwork or photo hanging on a wall",
+      "a close-up of a decorative picture frame"
+    ]
+  },
+  {
+    "id": "plant_pot",
+    "display_name": "Plant Pot",
+    "prompts": [
+      "a photo of a plant pot",
+      "a potted plant in a ceramic or terracotta pot",
+      "a close-up of a houseplant in a pot"
+    ]
+  },
+  {
+    "id": "rug",
+    "display_name": "Area Rug",
+    "prompts": [
+      "a photo of an area rug",
+      "a large decorative rug on a floor",
+      "a close-up of a patterned floor rug"
+    ]
+  },
+  {
+    "id": "curtain",
+    "display_name": "Curtains",
+    "prompts": [
+      "a photo of curtains",
+      "curtains hanging over a window",
+      "a close-up of drapes on a curtain rod"
+    ]
+  },
+  {
+    "id": "piano_bench",
+    "display_name": "Piano Bench",
+    "prompts": [
+      "a photo of a piano bench",
+      "a bench in front of a piano",
+      "a close-up of a padded piano seat"
+    ]
+  },
+  {
+    "id": "cuckoo_clock",
+    "display_name": "Cuckoo Clock",
+    "prompts": [
+      "a photo of a cuckoo clock",
+      "a wooden cuckoo clock on a wall",
+      "a close-up of a decorative cuckoo clock"
+    ]
+  },
+  {
+    "id": "satellite_dish",
+    "display_name": "Satellite Dish",
+    "prompts": [
+      "a photo of a satellite dish",
+      "a satellite dish mounted on a roof or wall",
+      "a close-up of a parabolic satellite antenna"
+    ]
+  },
+  {
+    "id": "solar_panel",
+    "display_name": "Solar Panel",
+    "prompts": [
+      "a photo of solar panels",
+      "solar panels mounted on a rooftop",
+      "a close-up of photovoltaic solar cells"
+    ]
+  },
+  {
+    "id": "wind_turbine",
+    "display_name": "Wind Turbine",
+    "prompts": [
+      "a photo of a wind turbine",
+      "a large wind turbine in a field",
+      "a close-up of wind turbine blades"
+    ]
+  },
+  {
+    "id": "mailbox_cluster",
+    "display_name": "Cluster Mailbox Unit",
+    "prompts": [
+      "a photo of a cluster mailbox unit",
+      "a bank of apartment or community mailboxes",
+      "a close-up of a multi-unit mailbox cluster"
+    ]
+  },
+  {
+    "id": "bench_vice",
+    "display_name": "Bench Vise",
+    "prompts": [
+      "a photo of a bench vise",
+      "a metal bench vise clamped to a workbench",
+      "a close-up of a workshop vise"
+    ]
+  },
+  {
+    "id": "table_saw",
+    "display_name": "Table Saw",
+    "prompts": [
+      "a photo of a table saw",
+      "a table saw in a workshop",
+      "a close-up of a table saw blade and fence"
+    ]
+  },
+  {
+    "id": "band_saw",
+    "display_name": "Band Saw",
+    "prompts": [
+      "a photo of a band saw",
+      "a vertical band saw in a woodshop",
+      "a close-up of a band saw blade and table"
+    ]
+  },
+  {
+    "id": "generator",
+    "display_name": "Generator",
+    "prompts": [
+      "a photo of a generator",
+      "a portable gas or electric generator",
+      "a close-up of a power generator unit"
+    ]
+  },
+  {
+    "id": "propane_tank",
+    "display_name": "Propane Tank",
+    "prompts": [
+      "a photo of a propane tank",
+      "a white or silver propane tank next to a grill",
+      "a close-up of a propane cylinder"
+    ]
+  },
+  {
+    "id": "fire_pit",
+    "display_name": "Fire Pit",
+    "prompts": [
+      "a photo of a fire pit",
+      "an outdoor fire pit with flames",
+      "a close-up of a backyard fire pit"
+    ]
+  },
+  {
+    "id": "picnic_table",
+    "display_name": "Picnic Table",
+    "prompts": [
+      "a photo of a picnic table",
+      "a wooden picnic table outdoors",
+      "a close-up of a park picnic table with benches"
+    ]
+  },
+  {
+    "id": "hammock",
+    "display_name": "Hammock",
+    "prompts": [
+      "a photo of a hammock",
+      "a hammock hanging between two trees",
+      "a close-up of a fabric hammock"
+    ]
+  },
+  {
+    "id": "flagpole",
+    "display_name": "Flagpole",
+    "prompts": [
+      "a photo of a flagpole",
+      "a tall flagpole with a flag flying",
+      "a close-up of a flagpole base"
+    ]
+  },
+  {
+    "id": "fence",
+    "display_name": "Fence",
+    "prompts": [
+      "a photo of a fence",
+      "a wooden or chain-link fence in a yard",
+      "a close-up of fence posts and boards"
+    ]
+  },
+  {
+    "id": "gate",
+    "display_name": "Gate",
+    "prompts": [
+      "a photo of a gate",
+      "a metal or wooden garden gate",
+      "a close-up of a latched gate"
+    ]
+  },
+  {
+    "id": "pond",
+    "display_name": "Garden Pond",
+    "prompts": [
+      "a photo of a garden pond",
+      "a backyard ornamental pond with plants",
+      "a close-up of a small garden water feature"
+    ]
+  },
+  {
+    "id": "wishing_well",
+    "display_name": "Wishing Well",
+    "prompts": [
+      "a photo of a wishing well",
+      "a decorative wishing well in a yard or park",
+      "a close-up of a stone or wooden wishing well"
+    ]
+  },
+  {
+    "id": "sundial",
+    "display_name": "Sundial",
+    "prompts": [
+      "a photo of a sundial",
+      "a garden sundial on a pedestal",
+      "a close-up of a brass or stone sundial"
+    ]
+  },
+  {
+    "id": "statue",
+    "display_name": "Garden Statue",
+    "prompts": [
+      "a photo of a garden statue",
+      "a stone or concrete garden statue",
+      "a close-up of a decorative outdoor sculpture"
+    ]
+  },
+  {
+    "id": "bus_stop",
+    "display_name": "Bus Stop",
+    "prompts": [
+      "a photo of a bus stop",
+      "a bus stop shelter on a sidewalk",
+      "a close-up of a bus stop sign and bench"
+    ]
+  },
+  {
+    "id": "phone_booth",
+    "display_name": "Phone Booth",
+    "prompts": [
+      "a photo of a phone booth",
+      "a classic phone booth on a street",
+      "a close-up of a telephone booth"
+    ]
+  },
+  {
+    "id": "newspaper_stand",
+    "display_name": "Newspaper Stand",
+    "prompts": [
+      "a photo of a newspaper stand",
+      "a coin-operated newspaper vending machine",
+      "a close-up of a metal newspaper stand on a sidewalk"
+    ]
+  },
+  {
+    "id": "post_box",
+    "display_name": "Post Box",
+    "prompts": [
+      "a photo of a post box",
+      "a red or blue public post box or mailbox",
+      "a close-up of a street-side post box"
+    ]
+  },
+  {
+    "id": "elliptical_trainer",
+    "display_name": "Elliptical Trainer",
+    "prompts": [
+      "a photo of an elliptical trainer",
+      "an elliptical exercise machine in a gym",
+      "a close-up of an elliptical machine pedals"
+    ]
+  },
+  {
+    "id": "stair_climber",
+    "display_name": "Stair Climber",
+    "prompts": [
+      "a photo of a stair climber machine",
+      "a StairMaster or stair stepper in a gym",
+      "a close-up of a stair climbing exercise machine"
+    ]
+  },
+  {
+    "id": "cable_machine",
+    "display_name": "Cable Machine",
+    "prompts": [
+      "a photo of a cable machine",
+      "a gym cable pulley machine",
+      "a close-up of a cable crossover machine in a gym"
+    ]
+  },
+  {
+    "id": "pull_up_bar",
+    "display_name": "Pull-Up Bar",
+    "prompts": [
+      "a photo of a pull-up bar",
+      "a wall or ceiling mounted pull-up bar",
+      "a close-up of a horizontal pull-up bar in a gym"
+    ]
+  },
+  {
+    "id": "pommel_horse",
+    "display_name": "Pommel Horse",
+    "prompts": [
+      "a photo of a pommel horse",
+      "a gymnastic pommel horse in a gym",
+      "a close-up of a pommel horse apparatus"
+    ]
+  },
+  {
+    "id": "balance_beam",
+    "display_name": "Balance Beam",
+    "prompts": [
+      "a photo of a balance beam",
+      "a gymnastics balance beam",
+      "a close-up of a narrow balance beam"
+    ]
+  },
+  {
+    "id": "uneven_bars",
+    "display_name": "Uneven Bars",
+    "prompts": [
+      "a photo of uneven bars",
+      "gymnastics uneven parallel bars",
+      "a close-up of gymnastics bar apparatus"
+    ]
+  },
+  {
+    "id": "vaulting_horse",
+    "display_name": "Vaulting Table",
+    "prompts": [
+      "a photo of a vaulting table",
+      "a gymnastics vaulting horse or table",
+      "a close-up of a gymnastics vault apparatus"
+    ]
+  },
+  {
+    "id": "electric_scooter",
+    "display_name": "Electric Scooter",
+    "prompts": [
+      "a photo of an electric scooter",
+      "an e-scooter parked on a sidewalk",
+      "a close-up of an electric kick scooter"
+    ]
+  },
+  {
+    "id": "scooter",
+    "display_name": "Motor Scooter",
+    "prompts": [
+      "a photo of a motor scooter",
+      "a Vespa or motor scooter parked",
+      "a close-up of a small motorized scooter"
+    ]
+  },
+  {
+    "id": "skateboard",
+    "display_name": "Skateboard",
+    "prompts": [
+      "a photo of a skateboard",
+      "a skateboard leaning against a wall",
+      "a close-up of a skateboard deck and wheels"
+    ]
+  },
+  {
+    "id": "snowblower",
+    "display_name": "Snow Blower",
+    "prompts": [
+      "a photo of a snow blower",
+      "a gas or electric snow blower in snow",
+      "a close-up of a snowblower machine"
+    ]
+  },
+  {
+    "id": "leaf_blower",
+    "display_name": "Leaf Blower",
+    "prompts": [
+      "a photo of a leaf blower",
+      "a gas or electric leaf blower in a yard",
+      "a close-up of a handheld leaf blower"
+    ]
+  },
+  {
+    "id": "hedge_trimmer",
+    "display_name": "Hedge Trimmer",
+    "prompts": [
+      "a photo of a hedge trimmer",
+      "an electric hedge trimmer cutting bushes",
+      "a close-up of a hedge trimmer blade"
+    ]
+  },
+  {
+    "id": "chainsaw",
+    "display_name": "Chainsaw",
+    "prompts": [
+      "a photo of a chainsaw",
+      "a gas or electric chainsaw",
+      "a close-up of a chainsaw bar and chain"
+    ]
+  },
+  {
+    "id": "pressure_washer",
+    "display_name": "Pressure Washer",
+    "prompts": [
+      "a photo of a pressure washer",
+      "an electric or gas pressure washer",
+      "a close-up of a pressure washer gun and wand"
+    ]
+  },
+  {
+    "id": "utility_sink",
+    "display_name": "Utility Sink",
+    "prompts": [
+      "a photo of a utility sink",
+      "a large laundry or utility room sink",
+      "a close-up of a deep utility basin"
+    ]
+  },
+  {
+    "id": "water_heater",
+    "display_name": "Water Heater",
+    "prompts": [
+      "a photo of a water heater",
+      "a tank water heater in a utility room or garage",
+      "a close-up of a cylindrical water heater unit"
+    ]
+  },
+  {
+    "id": "furnace",
+    "display_name": "Furnace",
+    "prompts": [
+      "a photo of a furnace",
+      "a home gas furnace in a basement",
+      "a close-up of a heating furnace unit"
+    ]
+  },
+  {
+    "id": "breaker_box",
+    "display_name": "Electrical Panel",
+    "prompts": [
+      "a photo of an electrical panel",
+      "a circuit breaker panel box on a wall",
+      "a close-up of a home breaker box"
+    ]
+  },
+  {
+    "id": "dehumidifier",
+    "display_name": "Dehumidifier",
+    "prompts": [
+      "a photo of a dehumidifier",
+      "a portable dehumidifier appliance in a room",
+      "a close-up of a dehumidifier unit"
+    ]
+  },
+  {
+    "id": "window_ac",
+    "display_name": "Window Air Conditioner",
+    "prompts": [
+      "a photo of a window air conditioner",
+      "a window AC unit installed in a window",
+      "a close-up of a window air conditioning unit"
+    ]
+  },
+  {
+    "id": "space_heater",
+    "display_name": "Space Heater",
+    "prompts": [
+      "a photo of a space heater",
+      "a portable electric space heater in a room",
+      "a close-up of a small space heating unit"
+    ]
+  },
+  {
+    "id": "electric_panel_heater",
+    "display_name": "Baseboard Heater",
+    "prompts": [
+      "a photo of a baseboard heater",
+      "an electric baseboard heater along a wall",
+      "a close-up of a wall baseboard heating unit"
+    ]
+  },
+  {
+    "id": "smoke_detector",
+    "display_name": "Smoke Detector",
+    "prompts": [
+      "a photo of a smoke detector",
+      "a smoke detector mounted on a ceiling",
+      "a close-up of a round smoke alarm"
+    ]
+  },
+  {
+    "id": "carbon_monoxide_detector",
+    "display_name": "Carbon Monoxide Detector",
+    "prompts": [
+      "a photo of a carbon monoxide detector",
+      "a CO detector plugged into a wall outlet",
+      "a close-up of a carbon monoxide alarm"
+    ]
+  },
+  {
+    "id": "doorbell",
+    "display_name": "Doorbell",
+    "prompts": [
+      "a photo of a doorbell",
+      "a doorbell button mounted next to a door",
+      "a close-up of a video or smart doorbell"
+    ]
+  },
+  {
+    "id": "security_camera",
+    "display_name": "Security Camera",
+    "prompts": [
+      "a photo of a security camera",
+      "a surveillance camera mounted on a wall or corner",
+      "a close-up of a CCTV security camera"
+    ]
+  },
+  {
+    "id": "router",
+    "display_name": "Wi-Fi Router",
+    "prompts": [
+      "a photo of a Wi-Fi router",
+      "a home wireless router with antennas",
+      "a close-up of a Wi-Fi router device"
+    ]
+  },
+  {
+    "id": "server_rack",
+    "display_name": "Server Rack",
+    "prompts": [
+      "a photo of a server rack",
+      "a data center server rack with equipment",
+      "a close-up of rack-mounted servers"
+    ]
+  },
+  {
+    "id": "projector",
+    "display_name": "Projector",
+    "prompts": [
+      "a photo of a projector",
+      "a ceiling or desk mounted projector",
+      "a close-up of a video projector"
+    ]
+  },
+  {
+    "id": "projector_screen",
+    "display_name": "Projector Screen",
+    "prompts": [
+      "a photo of a projector screen",
+      "a retractable projector screen in a room",
+      "a close-up of a projection screen"
+    ]
+  },
+  {
+    "id": "clock_radio",
+    "display_name": "Clock Radio",
+    "prompts": [
+      "a photo of a clock radio",
+      "a bedside clock radio on a nightstand",
+      "a close-up of a digital alarm clock radio"
+    ]
+  },
+  {
+    "id": "stepper",
+    "display_name": "Mini Stepper",
+    "prompts": [
+      "a photo of a mini stepper",
+      "a small exercise stepper on a gym floor",
+      "a close-up of a compact step machine"
+    ]
+  },
+  {
+    "id": "resistance_band",
+    "display_name": "Resistance Band",
+    "prompts": [
+      "a photo of resistance bands",
+      "elastic resistance bands hanging or coiled",
+      "a close-up of exercise resistance bands"
+    ]
+  },
+  {
+    "id": "pull_cart",
+    "display_name": "Hand Truck",
+    "prompts": [
+      "a photo of a hand truck",
+      "a metal two-wheeled hand truck or dolly",
+      "a close-up of a moving hand truck"
+    ]
+  },
+  {
+    "id": "shelf_unit",
+    "display_name": "Metal Shelving Unit",
+    "prompts": [
+      "a photo of a metal shelving unit",
+      "a freestanding metal shelf rack in a garage or storage room",
+      "a close-up of adjustable metal shelves"
+    ]
+  },
+  {
+    "id": "mattress",
+    "display_name": "Mattress",
+    "prompts": [
+      "a photo of a mattress",
+      "a mattress standing upright or on a bed frame",
+      "a close-up of a foam or spring mattress"
+    ]
+  },
+  {
+    "id": "bunk_bed",
+    "display_name": "Bunk Bed",
+    "prompts": [
+      "a photo of a bunk bed",
+      "a wooden or metal bunk bed in a room",
+      "a close-up of bunk bed ladders and railings"
+    ]
+  },
+  {
+    "id": "crib",
+    "display_name": "Baby Crib",
+    "prompts": [
+      "a photo of a baby crib",
+      "a wooden crib in a nursery",
+      "a close-up of a baby crib with rails"
+    ]
+  },
+  {
+    "id": "changing_table",
+    "display_name": "Changing Table",
+    "prompts": [
+      "a photo of a changing table",
+      "a baby changing table in a nursery",
+      "a close-up of a diaper changing table"
+    ]
+  },
+  {
+    "id": "shoe_rack",
+    "display_name": "Shoe Rack",
+    "prompts": [
+      "a photo of a shoe rack",
+      "a shoe rack with shoes organized on it",
+      "a close-up of a multi-tier shoe shelf"
+    ]
+  },
+  {
+    "id": "umbrella_stand",
+    "display_name": "Umbrella Stand",
+    "prompts": [
+      "a photo of an umbrella stand",
+      "an umbrella stand in an entryway with umbrellas",
+      "a close-up of a decorative umbrella holder"
+    ]
+  },
+  {
+    "id": "hat_rack",
+    "display_name": "Hat Rack",
+    "prompts": [
+      "a photo of a hat rack",
+      "a wall-mounted or freestanding hat rack with hats",
+      "a close-up of a hat display rack"
+    ]
+  },
+  {
+    "id": "wine_rack",
+    "display_name": "Wine Rack",
+    "prompts": [
+      "a photo of a wine rack",
+      "a wooden or metal wine rack with bottles",
+      "a close-up of a bottle wine storage rack"
+    ]
+  },
+  {
+    "id": "bookend",
+    "display_name": "Bookends",
+    "prompts": [
+      "a photo of bookends",
+      "decorative bookends holding books on a shelf",
+      "a close-up of a pair of metal or wooden bookends"
+    ]
+  },
+  {
+    "id": "trophy",
+    "display_name": "Trophy",
+    "prompts": [
+      "a photo of a trophy",
+      "a sports trophy on a shelf or desk",
+      "a close-up of a golden trophy cup"
+    ]
+  },
+  {
+    "id": "fire_escape",
+    "display_name": "Fire Escape",
+    "prompts": [
+      "a photo of a fire escape",
+      "a metal fire escape staircase on the outside of a building",
+      "a close-up of fire escape stairs and railing"
+    ]
+  },
+  {
+    "id": "dumpster",
+    "display_name": "Dumpster",
+    "prompts": [
+      "a photo of a dumpster",
+      "a large metal dumpster outside a building",
+      "a close-up of an industrial dumpster"
+    ]
+  },
+  {
+    "id": "street_lamp",
+    "display_name": "Street Lamp",
+    "prompts": [
+      "a photo of a street lamp",
+      "a street light pole on a sidewalk at night",
+      "a close-up of a streetlight head"
+    ]
+  },
+  {
+    "id": "bench_outdoor",
+    "display_name": "Outdoor Wooden Bench",
+    "prompts": [
+      "a photo of an outdoor wooden bench",
+      "a slatted wooden bench on a patio or garden",
+      "a close-up of a garden bench"
+    ]
+  },
+  {
+    "id": "rowing_boat",
+    "display_name": "Rowing Boat",
+    "prompts": [
+      "a photo of a rowing boat",
+      "a small wooden rowboat on water or shore",
+      "a close-up of a rowboat with oars"
+    ]
+  },
+  {
+    "id": "candelabra",
+    "display_name": "Candelabra",
+    "prompts": [
+      "a photo of a candelabra",
+      "a multi-arm candelabra with candles",
+      "a close-up of a decorative candle holder"
+    ]
+  },
+  {
+    "id": "trophy_case",
+    "display_name": "Trophy Case",
+    "prompts": [
+      "a photo of a trophy case",
+      "a glass display case with trophies and awards",
+      "a close-up of a trophy cabinet"
+    ]
+  },
+  {
+    "id": "chafing_dish",
+    "display_name": "Chafing Dish",
+    "prompts": [
+      "a photo of a chafing dish",
+      "a stainless steel chafing dish on a buffet table",
+      "a close-up of a catering chafing dish"
+    ]
+  },
+  {
+    "id": "balance_scale",
+    "display_name": "Balance Scale",
+    "prompts": [
+      "a photo of a balance scale",
+      "a vintage or laboratory balance scale",
+      "a close-up of a two-pan balance scale"
+    ]
+  },
+  {
+    "id": "diving_board",
+    "display_name": "Diving Board",
+    "prompts": [
+      "a photo of a diving board",
+      "a diving board over a swimming pool",
+      "a close-up of a springboard at a pool"
+    ]
+  },
+  {
+    "id": "swimming_pool",
+    "display_name": "Swimming Pool",
+    "prompts": [
+      "a photo of a swimming pool",
+      "a backyard or public swimming pool",
+      "a close-up of pool water and tiles"
+    ]
+  },
+  {
+    "id": "outdoor_shower",
+    "display_name": "Outdoor Shower",
+    "prompts": [
+      "a photo of an outdoor shower",
+      "a wooden outdoor shower enclosure in a garden",
+      "a close-up of a beach or yard shower head"
+    ]
+  },
+  {
+    "id": "storage_shed",
+    "display_name": "Storage Shed",
+    "prompts": [
+      "a photo of a storage shed",
+      "a backyard garden shed with a door",
+      "a close-up of a metal or wooden storage shed"
+    ]
+  },
+  {
+    "id": "dog_house",
+    "display_name": "Dog House",
+    "prompts": [
+      "a photo of a dog house",
+      "a wooden dog house in a yard",
+      "a close-up of a pet dog kennel"
+    ]
+  },
+  {
+    "id": "chicken_coop",
+    "display_name": "Chicken Coop",
+    "prompts": [
+      "a photo of a chicken coop",
+      "a backyard chicken coop with a run",
+      "a close-up of a hen house structure"
+    ]
+  },
+  {
+    "id": "horse_trough",
+    "display_name": "Horse Trough",
+    "prompts": [
+      "a photo of a horse trough",
+      "a metal or wooden water trough for animals",
+      "a close-up of a livestock feeding trough"
+    ]
+  },
+  {
+    "id": "hay_bale",
+    "display_name": "Hay Bale",
+    "prompts": [
+      "a photo of a hay bale",
+      "a round or square bale of hay in a field",
+      "a close-up of a straw bale"
+    ]
+  },
+  {
+    "id": "tractor",
+    "display_name": "Tractor",
+    "prompts": [
+      "a photo of a tractor",
+      "a farm tractor in a field or barn",
+      "a close-up of a large agricultural tractor"
+    ]
+  },
+  {
+    "id": "forklift",
+    "display_name": "Forklift",
+    "prompts": [
+      "a photo of a forklift",
+      "a forklift in a warehouse",
+      "a close-up of a forklift with raised forks"
+    ]
+  },
+  {
+    "id": "pallet",
+    "display_name": "Pallet",
+    "prompts": [
+      "a photo of a wooden pallet",
+      "stacked wooden shipping pallets in a warehouse",
+      "a close-up of a flat wooden pallet"
+    ]
+  },
+  {
+    "id": "cargo_shelf",
+    "display_name": "Warehouse Shelving",
+    "prompts": [
+      "a photo of warehouse shelving",
+      "tall industrial shelving in a warehouse",
+      "a close-up of heavy-duty storage racks"
+    ]
+  },
+  {
+    "id": "sauna",
+    "display_name": "Sauna",
+    "prompts": [
+      "a photo of a sauna",
+      "a wooden sauna room with benches",
+      "a close-up of a sauna interior with heated rocks"
+    ]
+  },
+  {
+    "id": "hot_plate",
+    "display_name": "Hot Plate",
+    "prompts": [
+      "a photo of a hot plate",
+      "an electric single or double hot plate burner",
+      "a close-up of a countertop hot plate cooker"
+    ]
+  },
+  {
+    "id": "bread_maker",
+    "display_name": "Bread Maker",
+    "prompts": [
+      "a photo of a bread maker",
+      "a bread machine on a kitchen counter",
+      "a close-up of a bread maker appliance"
+    ]
+  },
+  {
+    "id": "espresso_machine",
+    "display_name": "Espresso Machine",
+    "prompts": [
+      "a photo of an espresso machine",
+      "a home or commercial espresso machine",
+      "a close-up of an espresso maker with portafilter"
+    ]
+  },
+  {
+    "id": "wine_cooler",
+    "display_name": "Wine Cooler",
+    "prompts": [
+      "a photo of a wine cooler",
+      "a countertop or freestanding wine refrigerator",
+      "a close-up of a wine cooler with bottles visible"
+    ]
+  },
+  {
+    "id": "toaster_oven",
+    "display_name": "Toaster Oven",
+    "prompts": [
+      "a photo of a toaster oven",
+      "a countertop toaster oven in a kitchen",
+      "a close-up of a small oven toaster appliance"
+    ]
+  }
+]
