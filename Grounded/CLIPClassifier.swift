@@ -16,12 +16,12 @@ final class CLIPClassifier {
     private static let inputSize = 256
 
     private init() {
+        // Xcode compiles .mlpackage → .mlmodelc at build time; load the compiled form directly.
         guard
-            let modelURL = Bundle.main.url(forResource: "MobileCLIPImageEncoder", withExtension: "mlpackage"),
-            let compiled = try? MLModel.compileModel(at: modelURL),
-            let model = try? MLModel(contentsOf: compiled)
+            let modelURL = Bundle.main.url(forResource: "MobileCLIPImageEncoder", withExtension: "mlmodelc"),
+            let model = try? MLModel(contentsOf: modelURL)
         else {
-            fatalError("Failed to load MobileCLIPImageEncoder.mlpackage")
+            fatalError("MobileCLIPImageEncoder.mlmodelc not found in bundle — ensure the mlpackage is added to the Grounded target")
         }
         self.model = model
 
