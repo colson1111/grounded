@@ -3,15 +3,33 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = true
+    @State private var showActiveProfileAlert = false
+    @State private var activeProfileName: String? = nil
+
+    private var isBlocking: Bool { activeProfileName != nil }
 
     var body: some View {
         NavigationStack {
             List {
                 Section {
-                    NavigationLink {
-                        ProfileListView()
-                    } label: {
-                        Label("Manage Profiles", systemImage: "list.bullet")
+                    if isBlocking {
+                        Button {
+                            showActiveProfileAlert = true
+                        } label: {
+                            Label("Manage Profiles", systemImage: "list.bullet")
+                                .foregroundStyle(.primary)
+                        }
+                        .alert("Profile Active", isPresented: $showActiveProfileAlert) {
+                            Button("OK", role: .cancel) {}
+                        } message: {
+                            Text("Scan an anchor or turn off \"\(activeProfileName ?? "")\" before managing profiles.")
+                        }
+                    } else {
+                        NavigationLink {
+                            ProfileListView()
+                        } label: {
+                            Label("Manage Profiles", systemImage: "list.bullet")
+                        }
                     }
 
                     NavigationLink {
@@ -44,6 +62,10 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                let p = BlockingManager.shared.activeProfile
+                activeProfileName = p.id == BlockProfile.off.id ? nil : p.name
+            }
             .groundedListScreen()
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {

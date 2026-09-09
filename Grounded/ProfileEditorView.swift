@@ -35,6 +35,10 @@ struct ProfileEditorView: View {
     @State private var allowedApplicationTokensData: Data?
     @State private var originalAllowedApplicationTokensData: Data?
     @State private var category: ProfileCategory
+    @State private var profileColor: ProfileColor
+    @State private var addingScheduleBlock = false
+    @State private var newBlockWeekday: Int = 2
+    @State private var newBlockMinute: Int = 540
 
     private var isEditingActiveProfile: Bool {
         guard let editingID else { return false }
@@ -50,6 +54,7 @@ struct ProfileEditorView: View {
         _showAdvancedSections = State(initialValue: profile != nil)
         _name = State(initialValue: profile?.name ?? "")
         _category = State(initialValue: profile?.category ?? .focus)
+        _profileColor = State(initialValue: profile?.profileColor ?? .green)
         if let anchorObjects = profile?.anchorObjects, !anchorObjects.isEmpty {
             _anchorObjects = State(initialValue: VisionLabelCatalog.normalizedAnchorList(anchorObjects))
         } else {
@@ -155,6 +160,17 @@ struct ProfileEditorView: View {
                     }
                 )
             }
+            .sheet(isPresented: $addingScheduleBlock) {
+                ScheduleBlockEditor(
+                    block: ScheduleBlock(
+                        startMinuteOfDay: newBlockMinute,
+                        endMinuteOfDay: ScheduleBlock.suggestedEnd(afterStart: newBlockMinute),
+                        weekdays: [newBlockWeekday]
+                    ),
+                    onSave: { scheduleBlocks.append($0) },
+                    onDelete: nil
+                )
+            }
             .fullScreenCover(isPresented: $showAnchorCamera) {
                 AnchorLabelCaptureView { selected in
                     finishAnchorLabelSelection(selected)
@@ -204,6 +220,19 @@ struct ProfileEditorView: View {
             Picker("Type", selection: $category) {
                 ForEach(ProfileCategory.allCases, id: \.self) { cat in
                     Text(cat.displayName).tag(cat)
+                }
+            }
+            .pickerStyle(.menu)
+
+            Picker("Color", selection: $profileColor) {
+                ForEach(ProfileColor.allCases, id: \.self) { c in
+                    HStack {
+                        Circle()
+                            .fill(c.color)
+                            .frame(width: 12, height: 12)
+                        Text(c.displayName)
+                    }
+                    .tag(c)
                 }
             }
             .pickerStyle(.menu)
@@ -360,11 +389,19 @@ struct ProfileEditorView: View {
         Section {
             DisclosureGroup(isExpanded: $isScheduleExpanded) {
                 if isScheduleExpanded {
-                    ScheduleTimelineView(blocks: $scheduleBlocks)
-                        .padding(.vertical, 4)
+                    WeekTimelineView(
+                        layers: [.init(color: profileColor.color, blocks: scheduleBlocks)],
+                        onTapEmpty: { weekday, minute in
+                            newBlockWeekday = weekday
+                            newBlockMinute = minute
+                            addingScheduleBlock = true
+                        },
+                        onTapBlock: { block in editingScheduleBlock = block }
+                    )
+                    .padding(.vertical, 4)
 
                     if scheduleBlocks.isEmpty {
-                        Text("Tap the timeline to add a time window.")
+                        Text("Tap a day bar to add a time window.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     } else {
@@ -531,19 +568,22 @@ struct ProfileEditorView: View {
                     .foregroundStyle(.secondary)
             } else {
                 ForEach(anchorObjects, id: \.self) { label in
-                    Label {
-                        Text(VisionLabelCatalog.displayName(label))
-                    } icon: {
-                        GroundedAnchorIcon(size: 14)
-                    }
-                    .foregroundStyle(GroundedTheme.calmGreen)
-                        .swipeActions(edge: .trailing) {
-                            Button(role: .destructive) {
-                                anchorObjects.removeAll { $0 == label }
-                            } label: {
-                                Label("Remove", systemImage: "trash")
-                            }
+                    HStack {
+                        Label {
+                            Text(VisionLabelCatalog.displayName(label))
+                        } icon: {
+                            GroundedAnchorIcon(size: 14)
                         }
+                        .foregroundStyle(GroundedTheme.calmGreen)
+                        Spacer()
+                        Button(role: .destructive) {
+                            anchorObjects.removeAll { $0 == label }
+                        } label: {
+                            Image(systemName: "trash")
+                                .foregroundStyle(.red.opacity(0.7))
+                        }
+                        .buttonStyle(.plain)
+                    }
                 }
             }
 
@@ -633,7 +673,8 @@ struct ProfileEditorView: View {
             allowedApplicationTokensData: allowedApplicationTokensData,
             anchorObjects: VisionLabelCatalog.normalizedAnchorList(anchorObjects),
             scheduleBlocks: scheduleBlocks,
-            category: category
+            category: category,
+            profileColor: profileColor
         )
         Task {
             if !scheduleBlocks.isEmpty {
