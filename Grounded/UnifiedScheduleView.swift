@@ -11,6 +11,8 @@ struct UnifiedScheduleView: View {
         endMinuteOfDay: ScheduleBlock.suggestedEnd(afterStart: 9 * 60),
         weekdays: [Calendar.current.component(.weekday, from: Date())]
     )
+    @State private var pendingWeekday: Int? = nil
+    @State private var pendingMinute: Int = 540
 
     private var entries: [ScheduledWindowEntry] {
         ScheduleWindowIndex.allEntries(from: manager.profiles)
@@ -25,8 +27,34 @@ struct UnifiedScheduleView: View {
     }
 
 
+    private var timelineLayers: [WeekTimelineView.ProfileLayer] {
+        manager.profiles.map { profile in
+            WeekTimelineView.ProfileLayer(color: profile.profileColor.color, blocks: profile.scheduleBlocks)
+        }
+    }
+
     var body: some View {
         List {
+            if !timelineLayers.flatMap(\.blocks).isEmpty {
+                Section {
+                    WeekTimelineView(
+                        layers: timelineLayers,
+                        onTapEmpty: { weekday, minute in
+                            pendingWeekday = weekday
+                            pendingMinute = minute
+                            prepareNewBlock(weekday: weekday, minute: minute)
+                            showProfilePicker = true
+                        },
+                        onTapBlock: { block in
+                            if let entry = entries.first(where: { $0.block.id == block.id }) {
+                                editingEntry = entry
+                            }
+                        }
+                    )
+                    .padding(.vertical, 4)
+                }
+            }
+
             if !overlaps.isEmpty {
                 Section {
                     ForEach(Array(overlaps.enumerated()), id: \.offset) { _, pair in
@@ -165,14 +193,14 @@ struct UnifiedScheduleView: View {
         }
     }
 
-    private func prepareNewBlock() {
+    private func prepareNewBlock(weekday: Int? = nil, minute: Int? = nil) {
         let cal = Calendar.current
-        let minuteOfDay = cal.component(.hour, from: Date()) * 60 + cal.component(.minute, from: Date())
+        let minuteOfDay = minute ?? (cal.component(.hour, from: Date()) * 60 + cal.component(.minute, from: Date()))
         let start = min(max(minuteOfDay, 0), 1380)
         newBlock = ScheduleBlock(
             startMinuteOfDay: start,
             endMinuteOfDay: ScheduleBlock.suggestedEnd(afterStart: start),
-            weekdays: [cal.component(.weekday, from: Date())]
+            weekdays: [weekday ?? cal.component(.weekday, from: Date())]
         )
     }
 

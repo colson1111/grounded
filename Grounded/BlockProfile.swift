@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 // MARK: - Schedule
 
@@ -167,6 +168,33 @@ enum ScheduleWindowKey {
     }
 }
 
+// MARK: - Profile Color
+
+enum ProfileColor: String, Codable, CaseIterable {
+    case green, blue, orange, purple, pink, teal, red, yellow, indigo, mint
+
+    var color: Color {
+        switch self {
+        case .green:   return GroundedTheme.calmGreen
+        case .blue:    return .blue
+        case .orange:  return .orange
+        case .purple:  return .purple
+        case .pink:    return .pink
+        case .teal:    return .teal
+        case .red:     return .red
+        case .yellow:  return .yellow
+        case .indigo:  return .indigo
+        case .mint:    return .mint
+        }
+    }
+
+    var displayName: String { rawValue.capitalized }
+
+    static func auto(for index: Int) -> ProfileColor {
+        allCases[index % allCases.count]
+    }
+}
+
 // MARK: - Profile
 
 struct BlockProfile: Codable, Identifiable, Hashable {
@@ -182,6 +210,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
     var anchorObjects: [String] = []
     var scheduleBlocks: [ScheduleBlock] = []
     var category: ProfileCategory = .focus
+    var profileColor: ProfileColor = .green
 
     enum CodingKeys: String, CodingKey {
         case id, name, isActive, blockedDomains, activitySelectionData, activityIncludeEntireCategory
@@ -190,6 +219,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         case anchorObjects
         case antidoteObjects
         case category
+        case profileColor
     }
 
     init(
@@ -202,7 +232,8 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         allowedApplicationTokensData: Data? = nil,
         anchorObjects: [String] = [],
         scheduleBlocks: [ScheduleBlock] = [],
-        category: ProfileCategory = .focus
+        category: ProfileCategory = .focus,
+        profileColor: ProfileColor = .green
     ) {
         self.id = id
         self.name = name
@@ -214,6 +245,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         self.anchorObjects = anchorObjects
         self.scheduleBlocks = scheduleBlocks
         self.category = category
+        self.profileColor = profileColor
     }
 
     init(from decoder: Decoder) throws {
@@ -232,6 +264,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         }
         scheduleBlocks = try container.decodeIfPresent([ScheduleBlock].self, forKey: .scheduleBlocks) ?? []
         category = try container.decodeIfPresent(ProfileCategory.self, forKey: .category) ?? .focus
+        profileColor = try container.decodeIfPresent(ProfileColor.self, forKey: .profileColor) ?? .green
     }
 
     func encode(to encoder: Encoder) throws {
@@ -246,6 +279,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         try container.encode(anchorObjects, forKey: .anchorObjects)
         try container.encode(scheduleBlocks, forKey: .scheduleBlocks)
         try container.encode(category, forKey: .category)
+        try container.encode(profileColor, forKey: .profileColor)
     }
 
     static let off = BlockProfile(id: "off", name: "Off", isActive: false)

@@ -4,3 +4,4 @@ data/__pycache__/
 eval/__pycache__/
 __pycache__/
 *.pyc
+models/
