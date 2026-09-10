@@ -257,11 +257,14 @@ struct BlockProfile: Codable, Identifiable, Hashable {
         activitySelectionData = try container.decodeIfPresent(Data.self, forKey: .activitySelectionData)
         activityIncludeEntireCategory = try container.decodeIfPresent(Bool.self, forKey: .activityIncludeEntireCategory) ?? false
         allowedApplicationTokensData = try container.decodeIfPresent(Data.self, forKey: .allowedApplicationTokensData)
+        let rawAnchors: [String]
         if let anchors = try container.decodeIfPresent([String].self, forKey: .anchorObjects) {
-            anchorObjects = anchors
+            rawAnchors = anchors
         } else {
-            anchorObjects = try container.decodeIfPresent([String].self, forKey: .antidoteObjects) ?? []
+            rawAnchors = try container.decodeIfPresent([String].self, forKey: .antidoteObjects) ?? []
         }
+        // Drop/fuzzy-map anchors that aren't valid CLIP catalog ids (e.g. stale "mug", "coffee" seeds).
+        anchorObjects = VisionLabelCatalog.normalizedAnchorList(rawAnchors)
         scheduleBlocks = try container.decodeIfPresent([ScheduleBlock].self, forKey: .scheduleBlocks) ?? []
         category = try container.decodeIfPresent(ProfileCategory.self, forKey: .category) ?? .focus
         profileColor = try container.decodeIfPresent(ProfileColor.self, forKey: .profileColor) ?? .green
@@ -295,7 +298,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
                 "reddit.com", "youtube.com", "youtu.be", "googlevideo.com",
                 "facebook.com", "netflix.com"
             ],
-            anchorObjects: ["refrigerator", "plant", "tree"]
+            anchorObjects: ["refrigerator"]
         ),
         BlockProfile(
             id: "sleep",
@@ -306,7 +309,7 @@ struct BlockProfile: Codable, Identifiable, Hashable {
                 "reddit.com", "youtube.com", "youtu.be", "googlevideo.com",
                 "facebook.com", "netflix.com", "espn.com", "nytimes.com"
             ],
-            anchorObjects: ["coffee", "mug"],
+            anchorObjects: ["coffee_maker"],
             category: .rest
         ),
     ]

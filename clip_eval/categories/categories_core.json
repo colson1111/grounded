@@ -1,0 +1,2837 @@
+[
+ {
+  "id": "refrigerator",
+  "display_name": "Refrigerator",
+  "prompts": [
+   "a photo of a refrigerator",
+   "a refrigerator",
+   "a refrigerator, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "microwave",
+  "display_name": "Microwave",
+  "prompts": [
+   "a photo of a microwave",
+   "a microwave",
+   "a microwave, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "dishwasher",
+  "display_name": "Dishwasher",
+  "prompts": [
+   "a photo of a dishwasher",
+   "a dishwasher",
+   "a dishwasher, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "oven",
+  "display_name": "Oven",
+  "prompts": [
+   "a photo of an oven",
+   "an oven",
+   "an oven, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "toaster",
+  "display_name": "Toaster",
+  "prompts": [
+   "a photo of a toaster",
+   "a toaster",
+   "a toaster, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "toaster_oven",
+  "display_name": "Toaster Oven",
+  "prompts": [
+   "a photo of a toaster oven",
+   "a toaster oven",
+   "a toaster oven, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "blender",
+  "display_name": "Blender",
+  "prompts": [
+   "a photo of a blender",
+   "a blender",
+   "a blender, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "coffee_maker",
+  "display_name": "Coffee Maker",
+  "prompts": [
+   "a photo of a coffee maker",
+   "a coffee maker",
+   "a coffee maker, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "espresso_machine",
+  "display_name": "Espresso Machine",
+  "prompts": [
+   "a photo of an espresso machine",
+   "an espresso machine",
+   "an espresso machine, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "stand_mixer",
+  "display_name": "Stand Mixer",
+  "prompts": [
+   "a photo of a stand mixer",
+   "a stand mixer",
+   "a stand mixer, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "air_fryer",
+  "display_name": "Air Fryer",
+  "prompts": [
+   "a photo of an air fryer",
+   "an air fryer",
+   "an air fryer, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "rice_cooker",
+  "display_name": "Rice Cooker",
+  "prompts": [
+   "a photo of a rice cooker",
+   "a rice cooker",
+   "a rice cooker, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "slow_cooker",
+  "display_name": "Slow Cooker",
+  "prompts": [
+   "a photo of a slow cooker",
+   "a slow cooker",
+   "a slow cooker, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "food_processor",
+  "display_name": "Food Processor",
+  "prompts": [
+   "a photo of a food processor",
+   "a food processor",
+   "a food processor, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "electric_kettle",
+  "display_name": "Electric Kettle",
+  "prompts": [
+   "a photo of an electric kettle",
+   "an electric kettle",
+   "an electric kettle, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "range_hood",
+  "display_name": "Range Hood",
+  "prompts": [
+   "a photo of a range hood",
+   "a range hood",
+   "a range hood, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "chest_freezer",
+  "display_name": "Chest Freezer",
+  "prompts": [
+   "a photo of a chest freezer",
+   "a chest freezer",
+   "a chest freezer, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "mini_fridge",
+  "display_name": "Mini Fridge",
+  "prompts": [
+   "a photo of a mini fridge",
+   "a mini fridge",
+   "a mini fridge, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "kegerator",
+  "display_name": "Kegerator",
+  "prompts": [
+   "a photo of a kegerator",
+   "a kegerator",
+   "a kegerator, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "kitchen_island",
+  "display_name": "Kitchen Island",
+  "prompts": [
+   "a photo of a kitchen island",
+   "a kitchen island",
+   "a kitchen island, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "bar_cart",
+  "display_name": "Bar Cart",
+  "prompts": [
+   "a photo of a bar cart",
+   "a bar cart",
+   "a bar cart, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "ice_maker",
+  "display_name": "Ice Maker",
+  "prompts": [
+   "a photo of an ice maker",
+   "an ice maker",
+   "an ice maker, a kitchen appliance"
+  ]
+ },
+ {
+  "id": "toilet",
+  "display_name": "Toilet",
+  "prompts": [
+   "a photo of a toilet",
+   "a toilet",
+   "a toilet, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "bathtub",
+  "display_name": "Bathtub",
+  "prompts": [
+   "a photo of a bathtub",
+   "a bathtub",
+   "a bathtub, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "shower_head",
+  "display_name": "Shower Head",
+  "prompts": [
+   "a photo of a shower head",
+   "a shower head",
+   "a shower head, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "bathroom_scale",
+  "display_name": "Bathroom Scale",
+  "prompts": [
+   "a photo of a bathroom scale",
+   "a bathroom scale",
+   "a bathroom scale, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "towel_rack",
+  "display_name": "Towel Rack",
+  "prompts": [
+   "a photo of a towel rack",
+   "a towel rack",
+   "a towel rack, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "medicine_cabinet",
+  "display_name": "Medicine Cabinet",
+  "prompts": [
+   "a photo of a medicine cabinet",
+   "a medicine cabinet",
+   "a medicine cabinet, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "bathroom_vanity",
+  "display_name": "Bathroom Vanity",
+  "prompts": [
+   "a photo of a bathroom vanity",
+   "a bathroom vanity",
+   "a bathroom vanity, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "linen_closet",
+  "display_name": "Linen Closet",
+  "prompts": [
+   "a photo of a linen closet",
+   "a linen closet",
+   "a linen closet, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "laundry_hamper",
+  "display_name": "Laundry Hamper",
+  "prompts": [
+   "a photo of a laundry hamper",
+   "a laundry hamper",
+   "a laundry hamper, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "pedestal_sink",
+  "display_name": "Pedestal Sink",
+  "prompts": [
+   "a photo of a pedestal sink",
+   "a pedestal sink",
+   "a pedestal sink, a bathroom fixture"
+  ]
+ },
+ {
+  "id": "bed",
+  "display_name": "Bed",
+  "prompts": [
+   "a photo of a bed",
+   "a bed",
+   "a bed, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "dresser",
+  "display_name": "Dresser",
+  "prompts": [
+   "a photo of a dresser",
+   "a dresser",
+   "a dresser, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "wardrobe",
+  "display_name": "Wardrobe",
+  "prompts": [
+   "a photo of a wardrobe",
+   "a wardrobe",
+   "a wardrobe, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "nightstand",
+  "display_name": "Nightstand",
+  "prompts": [
+   "a photo of a nightstand",
+   "a nightstand",
+   "a nightstand, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "alarm_clock",
+  "display_name": "Alarm Clock",
+  "prompts": [
+   "a photo of an alarm clock",
+   "an alarm clock",
+   "an alarm clock, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "ceiling_fan",
+  "display_name": "Ceiling Fan",
+  "prompts": [
+   "a photo of a ceiling fan",
+   "a ceiling fan",
+   "a ceiling fan, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "mattress",
+  "display_name": "Mattress",
+  "prompts": [
+   "a photo of a mattress",
+   "a mattress",
+   "a mattress, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "bunk_bed",
+  "display_name": "Bunk Bed",
+  "prompts": [
+   "a photo of a bunk bed",
+   "a bunk bed",
+   "a bunk bed, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "crib",
+  "display_name": "Crib",
+  "prompts": [
+   "a photo of a crib",
+   "a crib",
+   "a crib, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "armoire",
+  "display_name": "Armoire",
+  "prompts": [
+   "a photo of an armoire",
+   "an armoire",
+   "an armoire, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "chest_of_drawers",
+  "display_name": "Chest Of Drawers",
+  "prompts": [
+   "a photo of a chest of drawers",
+   "a chest of drawers",
+   "a chest of drawers, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "headboard",
+  "display_name": "Headboard",
+  "prompts": [
+   "a photo of a headboard",
+   "a headboard",
+   "a headboard, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "rocking_chair",
+  "display_name": "Rocking Chair",
+  "prompts": [
+   "a photo of a rocking chair",
+   "a rocking chair",
+   "a rocking chair, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "daybed",
+  "display_name": "Daybed",
+  "prompts": [
+   "a photo of a daybed",
+   "a daybed",
+   "a daybed, a piece of bedroom furniture"
+  ]
+ },
+ {
+  "id": "sofa",
+  "display_name": "Sofa",
+  "prompts": [
+   "a photo of a sofa",
+   "a sofa",
+   "a sofa, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "television",
+  "display_name": "Television",
+  "prompts": [
+   "a photo of a television",
+   "a television",
+   "a television, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "bookshelf",
+  "display_name": "Bookshelf",
+  "prompts": [
+   "a photo of a bookshelf",
+   "a bookshelf",
+   "a bookshelf, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "fireplace",
+  "display_name": "Fireplace",
+  "prompts": [
+   "a photo of a fireplace",
+   "a fireplace",
+   "a fireplace, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "floor_lamp",
+  "display_name": "Floor Lamp",
+  "prompts": [
+   "a photo of a floor lamp",
+   "a floor lamp",
+   "a floor lamp, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "record_player",
+  "display_name": "Record Player",
+  "prompts": [
+   "a photo of a record player",
+   "a record player",
+   "a record player, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "dart_board",
+  "display_name": "Dart Board",
+  "prompts": [
+   "a photo of a dart board",
+   "a dart board",
+   "a dart board, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "grandfather_clock",
+  "display_name": "Grandfather Clock",
+  "prompts": [
+   "a photo of a grandfather clock",
+   "a grandfather clock",
+   "a grandfather clock, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "aquarium",
+  "display_name": "Aquarium",
+  "prompts": [
+   "a photo of an aquarium",
+   "an aquarium",
+   "an aquarium, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "rug",
+  "display_name": "Rug",
+  "prompts": [
+   "a photo of a rug",
+   "a rug",
+   "a rug, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "mirror",
+  "display_name": "Mirror",
+  "prompts": [
+   "a photo of a mirror",
+   "a mirror",
+   "a mirror, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "picture_frame",
+  "display_name": "Picture Frame",
+  "prompts": [
+   "a photo of a picture frame",
+   "a picture frame",
+   "a picture frame, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "sectional_sofa",
+  "display_name": "Sectional Sofa",
+  "prompts": [
+   "a photo of a sectional sofa",
+   "a sectional sofa",
+   "a sectional sofa, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "loveseat",
+  "display_name": "Loveseat",
+  "prompts": [
+   "a photo of a loveseat",
+   "a loveseat",
+   "a loveseat, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "recliner",
+  "display_name": "Recliner",
+  "prompts": [
+   "a photo of a recliner",
+   "a recliner",
+   "a recliner, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "ottoman",
+  "display_name": "Ottoman",
+  "prompts": [
+   "a photo of an ottoman",
+   "an ottoman",
+   "an ottoman, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "coffee_table",
+  "display_name": "Coffee Table",
+  "prompts": [
+   "a photo of a coffee table",
+   "a coffee table",
+   "a coffee table, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "end_table",
+  "display_name": "End Table",
+  "prompts": [
+   "a photo of an end table",
+   "an end table",
+   "an end table, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "entertainment_center",
+  "display_name": "Entertainment Center",
+  "prompts": [
+   "a photo of an entertainment center",
+   "an entertainment center",
+   "an entertainment center, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "tv_stand",
+  "display_name": "Tv Stand",
+  "prompts": [
+   "a photo of a tv stand",
+   "a tv stand",
+   "a tv stand, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "armchair",
+  "display_name": "Armchair",
+  "prompts": [
+   "a photo of an armchair",
+   "an armchair",
+   "an armchair, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "futon",
+  "display_name": "Futon",
+  "prompts": [
+   "a photo of a futon",
+   "a futon",
+   "a futon, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "credenza",
+  "display_name": "Credenza",
+  "prompts": [
+   "a photo of a credenza",
+   "a credenza",
+   "a credenza, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "sideboard",
+  "display_name": "Sideboard",
+  "prompts": [
+   "a photo of a sideboard",
+   "a sideboard",
+   "a sideboard, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "china_cabinet",
+  "display_name": "China Cabinet",
+  "prompts": [
+   "a photo of a china cabinet",
+   "a china cabinet",
+   "a china cabinet, a piece of living room furniture"
+  ]
+ },
+ {
+  "id": "desk",
+  "display_name": "Desk",
+  "prompts": [
+   "a photo of a desk",
+   "a desk",
+   "a desk, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "filing_cabinet",
+  "display_name": "Filing Cabinet",
+  "prompts": [
+   "a photo of a filing cabinet",
+   "a filing cabinet",
+   "a filing cabinet, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "printer",
+  "display_name": "Printer",
+  "prompts": [
+   "a photo of a printer",
+   "a printer",
+   "a printer, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "whiteboard",
+  "display_name": "Whiteboard",
+  "prompts": [
+   "a photo of a whiteboard",
+   "a whiteboard",
+   "a whiteboard, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "desk_lamp",
+  "display_name": "Desk Lamp",
+  "prompts": [
+   "a photo of a desk lamp",
+   "a desk lamp",
+   "a desk lamp, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "office_chair",
+  "display_name": "Office Chair",
+  "prompts": [
+   "a photo of an office chair",
+   "an office chair",
+   "an office chair, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "wall_clock",
+  "display_name": "Wall Clock",
+  "prompts": [
+   "a photo of a wall clock",
+   "a wall clock",
+   "a wall clock, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "projector",
+  "display_name": "Projector",
+  "prompts": [
+   "a photo of a projector",
+   "a projector",
+   "a projector, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "standing_desk",
+  "display_name": "Standing Desk",
+  "prompts": [
+   "a photo of a standing desk",
+   "a standing desk",
+   "a standing desk, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "scanner",
+  "display_name": "Scanner",
+  "prompts": [
+   "a photo of a scanner",
+   "a scanner",
+   "a scanner, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "conference_table",
+  "display_name": "Conference Table",
+  "prompts": [
+   "a photo of a conference table",
+   "a conference table",
+   "a conference table, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "globe",
+  "display_name": "Globe",
+  "prompts": [
+   "a photo of a globe",
+   "a globe",
+   "a globe, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "microscope",
+  "display_name": "Microscope",
+  "prompts": [
+   "a photo of a microscope",
+   "a microscope",
+   "a microscope, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "telescope",
+  "display_name": "Telescope",
+  "prompts": [
+   "a photo of a telescope",
+   "a telescope",
+   "a telescope, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "bookcase",
+  "display_name": "Bookcase",
+  "prompts": [
+   "a photo of a bookcase",
+   "a bookcase",
+   "a bookcase, a piece of office furniture or equipment"
+  ]
+ },
+ {
+  "id": "dining_table",
+  "display_name": "Dining Table",
+  "prompts": [
+   "a photo of a dining table",
+   "a dining table",
+   "a dining table, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "coat_rack",
+  "display_name": "Coat Rack",
+  "prompts": [
+   "a photo of a coat rack",
+   "a coat rack",
+   "a coat rack, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "shoe_rack",
+  "display_name": "Shoe Rack",
+  "prompts": [
+   "a photo of a shoe rack",
+   "a shoe rack",
+   "a shoe rack, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "wine_rack",
+  "display_name": "Wine Rack",
+  "prompts": [
+   "a photo of a wine rack",
+   "a wine rack",
+   "a wine rack, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "plant_pot",
+  "display_name": "Plant Pot",
+  "prompts": [
+   "a photo of a plant pot",
+   "a plant pot",
+   "a plant pot, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "shelf_unit",
+  "display_name": "Shelf Unit",
+  "prompts": [
+   "a photo of a shelf unit",
+   "a shelf unit",
+   "a shelf unit, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "ironing_board",
+  "display_name": "Ironing Board",
+  "prompts": [
+   "a photo of an ironing board",
+   "an ironing board",
+   "an ironing board, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "storage_bench",
+  "display_name": "Storage Bench",
+  "prompts": [
+   "a photo of a storage bench",
+   "a storage bench",
+   "a storage bench, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "garment_rack",
+  "display_name": "Garment Rack",
+  "prompts": [
+   "a photo of a garment rack",
+   "a garment rack",
+   "a garment rack, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "locker",
+  "display_name": "Locker",
+  "prompts": [
+   "a photo of a locker",
+   "a locker",
+   "a locker, a piece of home storage furniture"
+  ]
+ },
+ {
+  "id": "workbench",
+  "display_name": "Workbench",
+  "prompts": [
+   "a photo of a workbench",
+   "a workbench",
+   "a workbench, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "tool_chest",
+  "display_name": "Tool Chest",
+  "prompts": [
+   "a photo of a tool chest",
+   "a tool chest",
+   "a tool chest, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "toolbox",
+  "display_name": "Toolbox",
+  "prompts": [
+   "a photo of a toolbox",
+   "a toolbox",
+   "a toolbox, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "power_drill",
+  "display_name": "Power Drill",
+  "prompts": [
+   "a photo of a power drill",
+   "a power drill",
+   "a power drill, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "circular_saw",
+  "display_name": "Circular Saw",
+  "prompts": [
+   "a photo of a circular saw",
+   "a circular saw",
+   "a circular saw, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "table_saw",
+  "display_name": "Table Saw",
+  "prompts": [
+   "a photo of a table saw",
+   "a table saw",
+   "a table saw, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "drill_press",
+  "display_name": "Drill Press",
+  "prompts": [
+   "a photo of a drill press",
+   "a drill press",
+   "a drill press, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "air_compressor",
+  "display_name": "Air Compressor",
+  "prompts": [
+   "a photo of an air compressor",
+   "an air compressor",
+   "an air compressor, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "shop_vac",
+  "display_name": "Shop Vac",
+  "prompts": [
+   "a photo of a shop vac",
+   "a shop vac",
+   "a shop vac, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "ladder",
+  "display_name": "Ladder",
+  "prompts": [
+   "a photo of a ladder",
+   "a ladder",
+   "a ladder, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "generator",
+  "display_name": "Generator",
+  "prompts": [
+   "a photo of a generator",
+   "a generator",
+   "a generator, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "propane_tank",
+  "display_name": "Propane Tank",
+  "prompts": [
+   "a photo of a propane tank",
+   "a propane tank",
+   "a propane tank, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "miter_saw",
+  "display_name": "Miter Saw",
+  "prompts": [
+   "a photo of a miter saw",
+   "a miter saw",
+   "a miter saw, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "bench_grinder",
+  "display_name": "Bench Grinder",
+  "prompts": [
+   "a photo of a bench grinder",
+   "a bench grinder",
+   "a bench grinder, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "belt_sander",
+  "display_name": "Belt Sander",
+  "prompts": [
+   "a photo of a belt sander",
+   "a belt sander",
+   "a belt sander, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "sawhorse",
+  "display_name": "Sawhorse",
+  "prompts": [
+   "a photo of a sawhorse",
+   "a sawhorse",
+   "a sawhorse, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "pegboard",
+  "display_name": "Pegboard",
+  "prompts": [
+   "a photo of a pegboard",
+   "a pegboard",
+   "a pegboard, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "rolling_tool_cart",
+  "display_name": "Rolling Tool Cart",
+  "prompts": [
+   "a photo of a rolling tool cart",
+   "a rolling tool cart",
+   "a rolling tool cart, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "engine_hoist",
+  "display_name": "Engine Hoist",
+  "prompts": [
+   "a photo of an engine hoist",
+   "an engine hoist",
+   "an engine hoist, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "floor_jack",
+  "display_name": "Floor Jack",
+  "prompts": [
+   "a photo of a floor jack",
+   "a floor jack",
+   "a floor jack, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "welder",
+  "display_name": "Welder",
+  "prompts": [
+   "a photo of a welder",
+   "a welder",
+   "a welder, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "cement_mixer",
+  "display_name": "Cement Mixer",
+  "prompts": [
+   "a photo of a cement mixer",
+   "a cement mixer",
+   "a cement mixer, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "step_ladder",
+  "display_name": "Step Ladder",
+  "prompts": [
+   "a photo of a step ladder",
+   "a step ladder",
+   "a step ladder, a garage or workshop tool"
+  ]
+ },
+ {
+  "id": "lawnmower",
+  "display_name": "Lawnmower",
+  "prompts": [
+   "a photo of a lawnmower",
+   "a lawnmower",
+   "a lawnmower, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "wheelbarrow",
+  "display_name": "Wheelbarrow",
+  "prompts": [
+   "a photo of a wheelbarrow",
+   "a wheelbarrow",
+   "a wheelbarrow, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "rake",
+  "display_name": "Rake",
+  "prompts": [
+   "a photo of a rake",
+   "a rake",
+   "a rake, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "garden_hose",
+  "display_name": "Garden Hose",
+  "prompts": [
+   "a photo of a garden hose",
+   "a garden hose",
+   "a garden hose, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "barbecue_grill",
+  "display_name": "Barbecue Grill",
+  "prompts": [
+   "a photo of a barbecue grill",
+   "a barbecue grill",
+   "a barbecue grill, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "patio_umbrella",
+  "display_name": "Patio Umbrella",
+  "prompts": [
+   "a photo of a patio umbrella",
+   "a patio umbrella",
+   "a patio umbrella, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "greenhouse",
+  "display_name": "Greenhouse",
+  "prompts": [
+   "a photo of a greenhouse",
+   "a greenhouse",
+   "a greenhouse, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "compost_bin",
+  "display_name": "Compost Bin",
+  "prompts": [
+   "a photo of a compost bin",
+   "a compost bin",
+   "a compost bin, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "fire_pit",
+  "display_name": "Fire Pit",
+  "prompts": [
+   "a photo of a fire pit",
+   "a fire pit",
+   "a fire pit, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "picnic_table",
+  "display_name": "Picnic Table",
+  "prompts": [
+   "a photo of a picnic table",
+   "a picnic table",
+   "a picnic table, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "hammock",
+  "display_name": "Hammock",
+  "prompts": [
+   "a photo of a hammock",
+   "a hammock",
+   "a hammock, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "fence",
+  "display_name": "Fence",
+  "prompts": [
+   "a photo of a fence",
+   "a fence",
+   "a fence, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "gate",
+  "display_name": "Gate",
+  "prompts": [
+   "a photo of a gate",
+   "a gate",
+   "a gate, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "storage_shed",
+  "display_name": "Storage Shed",
+  "prompts": [
+   "a photo of a storage shed",
+   "a storage shed",
+   "a storage shed, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "dog_house",
+  "display_name": "Dog House",
+  "prompts": [
+   "a photo of a dog house",
+   "a dog house",
+   "a dog house, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "trampoline",
+  "display_name": "Trampoline",
+  "prompts": [
+   "a photo of a trampoline",
+   "a trampoline",
+   "a trampoline, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "swing_set",
+  "display_name": "Swing Set",
+  "prompts": [
+   "a photo of a swing set",
+   "a swing set",
+   "a swing set, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "diving_board",
+  "display_name": "Diving Board",
+  "prompts": [
+   "a photo of a diving board",
+   "a diving board",
+   "a diving board, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "leaf_blower",
+  "display_name": "Leaf Blower",
+  "prompts": [
+   "a photo of a leaf blower",
+   "a leaf blower",
+   "a leaf blower, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "hedge_trimmer",
+  "display_name": "Hedge Trimmer",
+  "prompts": [
+   "a photo of a hedge trimmer",
+   "a hedge trimmer",
+   "a hedge trimmer, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "chainsaw",
+  "display_name": "Chainsaw",
+  "prompts": [
+   "a photo of a chainsaw",
+   "a chainsaw",
+   "a chainsaw, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "pressure_washer",
+  "display_name": "Pressure Washer",
+  "prompts": [
+   "a photo of a pressure washer",
+   "a pressure washer",
+   "a pressure washer, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "gazebo",
+  "display_name": "Gazebo",
+  "prompts": [
+   "a photo of a gazebo",
+   "a gazebo",
+   "a gazebo, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "pergola",
+  "display_name": "Pergola",
+  "prompts": [
+   "a photo of a pergola",
+   "a pergola",
+   "a pergola, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "trellis",
+  "display_name": "Trellis",
+  "prompts": [
+   "a photo of a trellis",
+   "a trellis",
+   "a trellis, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "raised_garden_bed",
+  "display_name": "Raised Garden Bed",
+  "prompts": [
+   "a photo of a raised garden bed",
+   "a raised garden bed",
+   "a raised garden bed, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "potting_bench",
+  "display_name": "Potting Bench",
+  "prompts": [
+   "a photo of a potting bench",
+   "a potting bench",
+   "a potting bench, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "porch_swing",
+  "display_name": "Porch Swing",
+  "prompts": [
+   "a photo of a porch swing",
+   "a porch swing",
+   "a porch swing, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "adirondack_chair",
+  "display_name": "Adirondack Chair",
+  "prompts": [
+   "a photo of an adirondack chair",
+   "an adirondack chair",
+   "an adirondack chair, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "patio_set",
+  "display_name": "Patio Set",
+  "prompts": [
+   "a photo of a patio set",
+   "a patio set",
+   "a patio set, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "garden_bench",
+  "display_name": "Garden Bench",
+  "prompts": [
+   "a photo of a garden bench",
+   "a garden bench",
+   "a garden bench, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "sandbox",
+  "display_name": "Sandbox",
+  "prompts": [
+   "a photo of a sandbox",
+   "a sandbox",
+   "a sandbox, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "kiddie_pool",
+  "display_name": "Kiddie Pool",
+  "prompts": [
+   "a photo of a kiddie pool",
+   "a kiddie pool",
+   "a kiddie pool, an outdoor or garden object"
+  ]
+ },
+ {
+  "id": "treadmill",
+  "display_name": "Treadmill",
+  "prompts": [
+   "a photo of a treadmill",
+   "a treadmill",
+   "a treadmill, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "exercise_bike",
+  "display_name": "Exercise Bike",
+  "prompts": [
+   "a photo of an exercise bike",
+   "an exercise bike",
+   "an exercise bike, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "bench_press",
+  "display_name": "Bench Press",
+  "prompts": [
+   "a photo of a bench press",
+   "a bench press",
+   "a bench press, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "weight_rack",
+  "display_name": "Weight Rack",
+  "prompts": [
+   "a photo of a weight rack",
+   "a weight rack",
+   "a weight rack, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "barbell",
+  "display_name": "Barbell",
+  "prompts": [
+   "a photo of a barbell",
+   "a barbell",
+   "a barbell, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "kettlebell",
+  "display_name": "Kettlebell",
+  "prompts": [
+   "a photo of a kettlebell",
+   "a kettlebell",
+   "a kettlebell, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "punching_bag",
+  "display_name": "Punching Bag",
+  "prompts": [
+   "a photo of a punching bag",
+   "a punching bag",
+   "a punching bag, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "rowing_machine",
+  "display_name": "Rowing Machine",
+  "prompts": [
+   "a photo of a rowing machine",
+   "a rowing machine",
+   "a rowing machine, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "yoga_mat",
+  "display_name": "Yoga Mat",
+  "prompts": [
+   "a photo of a yoga mat",
+   "a yoga mat",
+   "a yoga mat, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "elliptical_trainer",
+  "display_name": "Elliptical Trainer",
+  "prompts": [
+   "a photo of an elliptical trainer",
+   "an elliptical trainer",
+   "an elliptical trainer, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "stair_climber",
+  "display_name": "Stair Climber",
+  "prompts": [
+   "a photo of a stair climber",
+   "a stair climber",
+   "a stair climber, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "squat_rack",
+  "display_name": "Squat Rack",
+  "prompts": [
+   "a photo of a squat rack",
+   "a squat rack",
+   "a squat rack, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "power_rack",
+  "display_name": "Power Rack",
+  "prompts": [
+   "a photo of a power rack",
+   "a power rack",
+   "a power rack, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "smith_machine",
+  "display_name": "Smith Machine",
+  "prompts": [
+   "a photo of a smith machine",
+   "a smith machine",
+   "a smith machine, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "leg_press",
+  "display_name": "Leg Press",
+  "prompts": [
+   "a photo of a leg press",
+   "a leg press",
+   "a leg press, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "lat_pulldown_machine",
+  "display_name": "Lat Pulldown Machine",
+  "prompts": [
+   "a photo of a lat pulldown machine",
+   "a lat pulldown machine",
+   "a lat pulldown machine, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "adjustable_bench",
+  "display_name": "Adjustable Bench",
+  "prompts": [
+   "a photo of an adjustable bench",
+   "an adjustable bench",
+   "an adjustable bench, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "dumbbell_rack",
+  "display_name": "Dumbbell Rack",
+  "prompts": [
+   "a photo of a dumbbell rack",
+   "a dumbbell rack",
+   "a dumbbell rack, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "battle_ropes",
+  "display_name": "Battle Ropes",
+  "prompts": [
+   "a photo of a battle ropes",
+   "a battle ropes",
+   "a battle ropes, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "spin_bike",
+  "display_name": "Spin Bike",
+  "prompts": [
+   "a photo of a spin bike",
+   "a spin bike",
+   "a spin bike, a piece of exercise equipment"
+  ]
+ },
+ {
+  "id": "car",
+  "display_name": "Car",
+  "prompts": [
+   "a photo of a car",
+   "a car",
+   "a car, a vehicle"
+  ]
+ },
+ {
+  "id": "motorcycle",
+  "display_name": "Motorcycle",
+  "prompts": [
+   "a photo of a motorcycle",
+   "a motorcycle",
+   "a motorcycle, a vehicle"
+  ]
+ },
+ {
+  "id": "bicycle",
+  "display_name": "Bicycle",
+  "prompts": [
+   "a photo of a bicycle",
+   "a bicycle",
+   "a bicycle, a vehicle"
+  ]
+ },
+ {
+  "id": "kayak",
+  "display_name": "Kayak",
+  "prompts": [
+   "a photo of a kayak",
+   "a kayak",
+   "a kayak, a vehicle"
+  ]
+ },
+ {
+  "id": "canoe",
+  "display_name": "Canoe",
+  "prompts": [
+   "a photo of a canoe",
+   "a canoe",
+   "a canoe, a vehicle"
+  ]
+ },
+ {
+  "id": "surfboard",
+  "display_name": "Surfboard",
+  "prompts": [
+   "a photo of a surfboard",
+   "a surfboard",
+   "a surfboard, a vehicle"
+  ]
+ },
+ {
+  "id": "electric_scooter",
+  "display_name": "Electric Scooter",
+  "prompts": [
+   "a photo of an electric scooter",
+   "an electric scooter",
+   "an electric scooter, a vehicle"
+  ]
+ },
+ {
+  "id": "skateboard",
+  "display_name": "Skateboard",
+  "prompts": [
+   "a photo of a skateboard",
+   "a skateboard",
+   "a skateboard, a vehicle"
+  ]
+ },
+ {
+  "id": "tractor",
+  "display_name": "Tractor",
+  "prompts": [
+   "a photo of a tractor",
+   "a tractor",
+   "a tractor, a vehicle"
+  ]
+ },
+ {
+  "id": "forklift",
+  "display_name": "Forklift",
+  "prompts": [
+   "a photo of a forklift",
+   "a forklift",
+   "a forklift, a vehicle"
+  ]
+ },
+ {
+  "id": "pickup_truck",
+  "display_name": "Pickup Truck",
+  "prompts": [
+   "a photo of a pickup truck",
+   "a pickup truck",
+   "a pickup truck, a vehicle"
+  ]
+ },
+ {
+  "id": "cargo_van",
+  "display_name": "Cargo Van",
+  "prompts": [
+   "a photo of a cargo van",
+   "a cargo van",
+   "a cargo van, a vehicle"
+  ]
+ },
+ {
+  "id": "minivan",
+  "display_name": "Minivan",
+  "prompts": [
+   "a photo of a minivan",
+   "a minivan",
+   "a minivan, a vehicle"
+  ]
+ },
+ {
+  "id": "suv",
+  "display_name": "Suv",
+  "prompts": [
+   "a photo of a suv",
+   "a suv",
+   "a suv, a vehicle"
+  ]
+ },
+ {
+  "id": "sedan",
+  "display_name": "Sedan",
+  "prompts": [
+   "a photo of a sedan",
+   "a sedan",
+   "a sedan, a vehicle"
+  ]
+ },
+ {
+  "id": "travel_trailer",
+  "display_name": "Travel Trailer",
+  "prompts": [
+   "a photo of a travel trailer",
+   "a travel trailer",
+   "a travel trailer, a vehicle"
+  ]
+ },
+ {
+  "id": "rv",
+  "display_name": "Rv",
+  "prompts": [
+   "a photo of a rv",
+   "a rv",
+   "a rv, a vehicle"
+  ]
+ },
+ {
+  "id": "utility_trailer",
+  "display_name": "Utility Trailer",
+  "prompts": [
+   "a photo of an utility trailer",
+   "an utility trailer",
+   "an utility trailer, a vehicle"
+  ]
+ },
+ {
+  "id": "sailboat",
+  "display_name": "Sailboat",
+  "prompts": [
+   "a photo of a sailboat",
+   "a sailboat",
+   "a sailboat, a vehicle"
+  ]
+ },
+ {
+  "id": "jet_ski",
+  "display_name": "Jet Ski",
+  "prompts": [
+   "a photo of a jet ski",
+   "a jet ski",
+   "a jet ski, a vehicle"
+  ]
+ },
+ {
+  "id": "golf_cart",
+  "display_name": "Golf Cart",
+  "prompts": [
+   "a photo of a golf cart",
+   "a golf cart",
+   "a golf cart, a vehicle"
+  ]
+ },
+ {
+  "id": "atv",
+  "display_name": "Atv",
+  "prompts": [
+   "a photo of an atv",
+   "an atv",
+   "an atv, a vehicle"
+  ]
+ },
+ {
+  "id": "snowmobile",
+  "display_name": "Snowmobile",
+  "prompts": [
+   "a photo of a snowmobile",
+   "a snowmobile",
+   "a snowmobile, a vehicle"
+  ]
+ },
+ {
+  "id": "riding_mower",
+  "display_name": "Riding Mower",
+  "prompts": [
+   "a photo of a riding mower",
+   "a riding mower",
+   "a riding mower, a vehicle"
+  ]
+ },
+ {
+  "id": "go_kart",
+  "display_name": "Go Kart",
+  "prompts": [
+   "a photo of a go kart",
+   "a go kart",
+   "a go kart, a vehicle"
+  ]
+ },
+ {
+  "id": "steering_wheel",
+  "display_name": "Steering Wheel",
+  "prompts": [
+   "a photo of a steering wheel",
+   "a steering wheel",
+   "a steering wheel, a car accessory"
+  ]
+ },
+ {
+  "id": "spare_tire",
+  "display_name": "Spare Tire",
+  "prompts": [
+   "a photo of a spare tire",
+   "a spare tire",
+   "a spare tire, a car accessory"
+  ]
+ },
+ {
+  "id": "jumper_cables",
+  "display_name": "Jumper Cables",
+  "prompts": [
+   "a photo of a jumper cables",
+   "a jumper cables",
+   "a jumper cables, a car accessory"
+  ]
+ },
+ {
+  "id": "gas_pump",
+  "display_name": "Gas Pump",
+  "prompts": [
+   "a photo of a gas pump",
+   "a gas pump",
+   "a gas pump, a car accessory"
+  ]
+ },
+ {
+  "id": "car_battery",
+  "display_name": "Car Battery",
+  "prompts": [
+   "a photo of a car battery",
+   "a car battery",
+   "a car battery, a car accessory"
+  ]
+ },
+ {
+  "id": "car_jack",
+  "display_name": "Car Jack",
+  "prompts": [
+   "a photo of a car jack",
+   "a car jack",
+   "a car jack, a car accessory"
+  ]
+ },
+ {
+  "id": "roof_rack",
+  "display_name": "Roof Rack",
+  "prompts": [
+   "a photo of a roof rack",
+   "a roof rack",
+   "a roof rack, a car accessory"
+  ]
+ },
+ {
+  "id": "tow_hitch",
+  "display_name": "Tow Hitch",
+  "prompts": [
+   "a photo of a tow hitch",
+   "a tow hitch",
+   "a tow hitch, a car accessory"
+  ]
+ },
+ {
+  "id": "tire_inflator",
+  "display_name": "Tire Inflator",
+  "prompts": [
+   "a photo of a tire inflator",
+   "a tire inflator",
+   "a tire inflator, a car accessory"
+  ]
+ },
+ {
+  "id": "gas_can",
+  "display_name": "Gas Can",
+  "prompts": [
+   "a photo of a gas can",
+   "a gas can",
+   "a gas can, a car accessory"
+  ]
+ },
+ {
+  "id": "car_ramps",
+  "display_name": "Car Ramps",
+  "prompts": [
+   "a photo of a car ramps",
+   "a car ramps",
+   "a car ramps, a car accessory"
+  ]
+ },
+ {
+  "id": "piano",
+  "display_name": "Piano",
+  "prompts": [
+   "a photo of a piano",
+   "a piano",
+   "a piano, a musical instrument"
+  ]
+ },
+ {
+  "id": "guitar",
+  "display_name": "Guitar",
+  "prompts": [
+   "a photo of a guitar",
+   "a guitar",
+   "a guitar, a musical instrument"
+  ]
+ },
+ {
+  "id": "drum_kit",
+  "display_name": "Drum Kit",
+  "prompts": [
+   "a photo of a drum kit",
+   "a drum kit",
+   "a drum kit, a musical instrument"
+  ]
+ },
+ {
+  "id": "violin",
+  "display_name": "Violin",
+  "prompts": [
+   "a photo of a violin",
+   "a violin",
+   "a violin, a musical instrument"
+  ]
+ },
+ {
+  "id": "trumpet",
+  "display_name": "Trumpet",
+  "prompts": [
+   "a photo of a trumpet",
+   "a trumpet",
+   "a trumpet, a musical instrument"
+  ]
+ },
+ {
+  "id": "cello",
+  "display_name": "Cello",
+  "prompts": [
+   "a photo of a cello",
+   "a cello",
+   "a cello, a musical instrument"
+  ]
+ },
+ {
+  "id": "accordion",
+  "display_name": "Accordion",
+  "prompts": [
+   "a photo of an accordion",
+   "an accordion",
+   "an accordion, a musical instrument"
+  ]
+ },
+ {
+  "id": "electric_keyboard",
+  "display_name": "Electric Keyboard",
+  "prompts": [
+   "a photo of an electric keyboard",
+   "an electric keyboard",
+   "an electric keyboard, a musical instrument"
+  ]
+ },
+ {
+  "id": "synthesizer",
+  "display_name": "Synthesizer",
+  "prompts": [
+   "a photo of a synthesizer",
+   "a synthesizer",
+   "a synthesizer, a musical instrument"
+  ]
+ },
+ {
+  "id": "harp",
+  "display_name": "Harp",
+  "prompts": [
+   "a photo of a harp",
+   "a harp",
+   "a harp, a musical instrument"
+  ]
+ },
+ {
+  "id": "banjo",
+  "display_name": "Banjo",
+  "prompts": [
+   "a photo of a banjo",
+   "a banjo",
+   "a banjo, a musical instrument"
+  ]
+ },
+ {
+  "id": "saxophone",
+  "display_name": "Saxophone",
+  "prompts": [
+   "a photo of a saxophone",
+   "a saxophone",
+   "a saxophone, a musical instrument"
+  ]
+ },
+ {
+  "id": "clarinet",
+  "display_name": "Clarinet",
+  "prompts": [
+   "a photo of a clarinet",
+   "a clarinet",
+   "a clarinet, a musical instrument"
+  ]
+ },
+ {
+  "id": "flute",
+  "display_name": "Flute",
+  "prompts": [
+   "a photo of a flute",
+   "a flute",
+   "a flute, a musical instrument"
+  ]
+ },
+ {
+  "id": "trombone",
+  "display_name": "Trombone",
+  "prompts": [
+   "a photo of a trombone",
+   "a trombone",
+   "a trombone, a musical instrument"
+  ]
+ },
+ {
+  "id": "marimba",
+  "display_name": "Marimba",
+  "prompts": [
+   "a photo of a marimba",
+   "a marimba",
+   "a marimba, a musical instrument"
+  ]
+ },
+ {
+  "id": "guitar_amplifier",
+  "display_name": "Guitar Amplifier",
+  "prompts": [
+   "a photo of a guitar amplifier",
+   "a guitar amplifier",
+   "a guitar amplifier, a musical instrument"
+  ]
+ },
+ {
+  "id": "grand_piano",
+  "display_name": "Grand Piano",
+  "prompts": [
+   "a photo of a grand piano",
+   "a grand piano",
+   "a grand piano, a musical instrument"
+  ]
+ },
+ {
+  "id": "upright_piano",
+  "display_name": "Upright Piano",
+  "prompts": [
+   "a photo of an upright piano",
+   "an upright piano",
+   "an upright piano, a musical instrument"
+  ]
+ },
+ {
+  "id": "electric_guitar",
+  "display_name": "Electric Guitar",
+  "prompts": [
+   "a photo of an electric guitar",
+   "an electric guitar",
+   "an electric guitar, a musical instrument"
+  ]
+ },
+ {
+  "id": "first_aid_kit",
+  "display_name": "First Aid Kit",
+  "prompts": [
+   "a photo of a first aid kit",
+   "a first aid kit",
+   "a first aid kit, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "defibrillator",
+  "display_name": "Defibrillator",
+  "prompts": [
+   "a photo of a defibrillator",
+   "a defibrillator",
+   "a defibrillator, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "crutches",
+  "display_name": "Crutches",
+  "prompts": [
+   "a photo of a crutches",
+   "a crutches",
+   "a crutches, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "wheelchair",
+  "display_name": "Wheelchair",
+  "prompts": [
+   "a photo of a wheelchair",
+   "a wheelchair",
+   "a wheelchair, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "fire_extinguisher",
+  "display_name": "Fire Extinguisher",
+  "prompts": [
+   "a photo of a fire extinguisher",
+   "a fire extinguisher",
+   "a fire extinguisher, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "smoke_detector",
+  "display_name": "Smoke Detector",
+  "prompts": [
+   "a photo of a smoke detector",
+   "a smoke detector",
+   "a smoke detector, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "hospital_bed",
+  "display_name": "Hospital Bed",
+  "prompts": [
+   "a photo of a hospital bed",
+   "a hospital bed",
+   "a hospital bed, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "walker",
+  "display_name": "Walker",
+  "prompts": [
+   "a photo of a walker",
+   "a walker",
+   "a walker, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "mobility_scooter",
+  "display_name": "Mobility Scooter",
+  "prompts": [
+   "a photo of a mobility scooter",
+   "a mobility scooter",
+   "a mobility scooter, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "oxygen_concentrator",
+  "display_name": "Oxygen Concentrator",
+  "prompts": [
+   "a photo of an oxygen concentrator",
+   "an oxygen concentrator",
+   "an oxygen concentrator, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "exam_table",
+  "display_name": "Exam Table",
+  "prompts": [
+   "a photo of an exam table",
+   "an exam table",
+   "an exam table, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "iv_pole",
+  "display_name": "Iv Pole",
+  "prompts": [
+   "a photo of an iv pole",
+   "an iv pole",
+   "an iv pole, a piece of medical or safety equipment"
+  ]
+ },
+ {
+  "id": "birdcage",
+  "display_name": "Birdcage",
+  "prompts": [
+   "a photo of a birdcage",
+   "a birdcage",
+   "a birdcage, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "dog_crate",
+  "display_name": "Dog Crate",
+  "prompts": [
+   "a photo of a dog crate",
+   "a dog crate",
+   "a dog crate, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "beehive",
+  "display_name": "Beehive",
+  "prompts": [
+   "a photo of a beehive",
+   "a beehive",
+   "a beehive, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "fish_tank",
+  "display_name": "Fish Tank",
+  "prompts": [
+   "a photo of a fish tank",
+   "a fish tank",
+   "a fish tank, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "terrarium",
+  "display_name": "Terrarium",
+  "prompts": [
+   "a photo of a terrarium",
+   "a terrarium",
+   "a terrarium, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "hamster_cage",
+  "display_name": "Hamster Cage",
+  "prompts": [
+   "a photo of a hamster cage",
+   "a hamster cage",
+   "a hamster cage, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "rabbit_hutch",
+  "display_name": "Rabbit Hutch",
+  "prompts": [
+   "a photo of a rabbit hutch",
+   "a rabbit hutch",
+   "a rabbit hutch, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "litter_box",
+  "display_name": "Litter Box",
+  "prompts": [
+   "a photo of a litter box",
+   "a litter box",
+   "a litter box, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "cat_tree",
+  "display_name": "Cat Tree",
+  "prompts": [
+   "a photo of a cat tree",
+   "a cat tree",
+   "a cat tree, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "dog_kennel",
+  "display_name": "Dog Kennel",
+  "prompts": [
+   "a photo of a dog kennel",
+   "a dog kennel",
+   "a dog kennel, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "dog_bed",
+  "display_name": "Dog Bed",
+  "prompts": [
+   "a photo of a dog bed",
+   "a dog bed",
+   "a dog bed, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "aviary",
+  "display_name": "Aviary",
+  "prompts": [
+   "a photo of an aviary",
+   "an aviary",
+   "an aviary, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "horse_stall",
+  "display_name": "Horse Stall",
+  "prompts": [
+   "a photo of a horse stall",
+   "a horse stall",
+   "a horse stall, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "feed_trough",
+  "display_name": "Feed Trough",
+  "prompts": [
+   "a photo of a feed trough",
+   "a feed trough",
+   "a feed trough, an item for pets or animals"
+  ]
+ },
+ {
+  "id": "washing_machine",
+  "display_name": "Washing Machine",
+  "prompts": [
+   "a photo of a washing machine",
+   "a washing machine",
+   "a washing machine, a home utility system"
+  ]
+ },
+ {
+  "id": "dryer",
+  "display_name": "Dryer",
+  "prompts": [
+   "a photo of a dryer",
+   "a dryer",
+   "a dryer, a home utility system"
+  ]
+ },
+ {
+  "id": "vacuum_cleaner",
+  "display_name": "Vacuum Cleaner",
+  "prompts": [
+   "a photo of a vacuum cleaner",
+   "a vacuum cleaner",
+   "a vacuum cleaner, a home utility system"
+  ]
+ },
+ {
+  "id": "sewing_machine",
+  "display_name": "Sewing Machine",
+  "prompts": [
+   "a photo of a sewing machine",
+   "a sewing machine",
+   "a sewing machine, a home utility system"
+  ]
+ },
+ {
+  "id": "water_heater",
+  "display_name": "Water Heater",
+  "prompts": [
+   "a photo of a water heater",
+   "a water heater",
+   "a water heater, a home utility system"
+  ]
+ },
+ {
+  "id": "furnace",
+  "display_name": "Furnace",
+  "prompts": [
+   "a photo of a furnace",
+   "a furnace",
+   "a furnace, a home utility system"
+  ]
+ },
+ {
+  "id": "breaker_box",
+  "display_name": "Breaker Box",
+  "prompts": [
+   "a photo of a breaker box",
+   "a breaker box",
+   "a breaker box, a home utility system"
+  ]
+ },
+ {
+  "id": "dehumidifier",
+  "display_name": "Dehumidifier",
+  "prompts": [
+   "a photo of a dehumidifier",
+   "a dehumidifier",
+   "a dehumidifier, a home utility system"
+  ]
+ },
+ {
+  "id": "space_heater",
+  "display_name": "Space Heater",
+  "prompts": [
+   "a photo of a space heater",
+   "a space heater",
+   "a space heater, a home utility system"
+  ]
+ },
+ {
+  "id": "security_camera",
+  "display_name": "Security Camera",
+  "prompts": [
+   "a photo of a security camera",
+   "a security camera",
+   "a security camera, a home utility system"
+  ]
+ },
+ {
+  "id": "satellite_dish",
+  "display_name": "Satellite Dish",
+  "prompts": [
+   "a photo of a satellite dish",
+   "a satellite dish",
+   "a satellite dish, a home utility system"
+  ]
+ },
+ {
+  "id": "solar_panel",
+  "display_name": "Solar Panel",
+  "prompts": [
+   "a photo of a solar panel",
+   "a solar panel",
+   "a solar panel, a home utility system"
+  ]
+ },
+ {
+  "id": "wind_turbine",
+  "display_name": "Wind Turbine",
+  "prompts": [
+   "a photo of a wind turbine",
+   "a wind turbine",
+   "a wind turbine, a home utility system"
+  ]
+ },
+ {
+  "id": "water_softener",
+  "display_name": "Water Softener",
+  "prompts": [
+   "a photo of a water softener",
+   "a water softener",
+   "a water softener, a home utility system"
+  ]
+ },
+ {
+  "id": "sump_pump",
+  "display_name": "Sump Pump",
+  "prompts": [
+   "a photo of a sump pump",
+   "a sump pump",
+   "a sump pump, a home utility system"
+  ]
+ },
+ {
+  "id": "boiler",
+  "display_name": "Boiler",
+  "prompts": [
+   "a photo of a boiler",
+   "a boiler",
+   "a boiler, a home utility system"
+  ]
+ },
+ {
+  "id": "heat_pump",
+  "display_name": "Heat Pump",
+  "prompts": [
+   "a photo of a heat pump",
+   "a heat pump",
+   "a heat pump, a home utility system"
+  ]
+ },
+ {
+  "id": "ev_charger",
+  "display_name": "Ev Charger",
+  "prompts": [
+   "a photo of an ev charger",
+   "an ev charger",
+   "an ev charger, a home utility system"
+  ]
+ },
+ {
+  "id": "radiator",
+  "display_name": "Radiator",
+  "prompts": [
+   "a photo of a radiator",
+   "a radiator",
+   "a radiator, a home utility system"
+  ]
+ },
+ {
+  "id": "wood_stove",
+  "display_name": "Wood Stove",
+  "prompts": [
+   "a photo of a wood stove",
+   "a wood stove",
+   "a wood stove, a home utility system"
+  ]
+ },
+ {
+  "id": "pellet_stove",
+  "display_name": "Pellet Stove",
+  "prompts": [
+   "a photo of a pellet stove",
+   "a pellet stove",
+   "a pellet stove, a home utility system"
+  ]
+ },
+ {
+  "id": "pool_table",
+  "display_name": "Pool Table",
+  "prompts": [
+   "a photo of a pool table",
+   "a pool table",
+   "a pool table, a game or leisure item"
+  ]
+ },
+ {
+  "id": "ping_pong_table",
+  "display_name": "Ping Pong Table",
+  "prompts": [
+   "a photo of a ping pong table",
+   "a ping pong table",
+   "a ping pong table, a game or leisure item"
+  ]
+ },
+ {
+  "id": "foosball_table",
+  "display_name": "Foosball Table",
+  "prompts": [
+   "a photo of a foosball table",
+   "a foosball table",
+   "a foosball table, a game or leisure item"
+  ]
+ },
+ {
+  "id": "pinball_machine",
+  "display_name": "Pinball Machine",
+  "prompts": [
+   "a photo of a pinball machine",
+   "a pinball machine",
+   "a pinball machine, a game or leisure item"
+  ]
+ },
+ {
+  "id": "arcade_cabinet",
+  "display_name": "Arcade Cabinet",
+  "prompts": [
+   "a photo of an arcade cabinet",
+   "an arcade cabinet",
+   "an arcade cabinet, a game or leisure item"
+  ]
+ },
+ {
+  "id": "hot_tub",
+  "display_name": "Hot Tub",
+  "prompts": [
+   "a photo of a hot tub",
+   "a hot tub",
+   "a hot tub, a game or leisure item"
+  ]
+ },
+ {
+  "id": "sauna",
+  "display_name": "Sauna",
+  "prompts": [
+   "a photo of a sauna",
+   "a sauna",
+   "a sauna, a game or leisure item"
+  ]
+ },
+ {
+  "id": "basketball_hoop",
+  "display_name": "Basketball Hoop",
+  "prompts": [
+   "a photo of a basketball hoop",
+   "a basketball hoop",
+   "a basketball hoop, a game or leisure item"
+  ]
+ },
+ {
+  "id": "soccer_goal",
+  "display_name": "Soccer Goal",
+  "prompts": [
+   "a photo of a soccer goal",
+   "a soccer goal",
+   "a soccer goal, a game or leisure item"
+  ]
+ },
+ {
+  "id": "golf_bag",
+  "display_name": "Golf Bag",
+  "prompts": [
+   "a photo of a golf bag",
+   "a golf bag",
+   "a golf bag, a game or leisure item"
+  ]
+ },
+ {
+  "id": "fishing_rod",
+  "display_name": "Fishing Rod",
+  "prompts": [
+   "a photo of a fishing rod",
+   "a fishing rod",
+   "a fishing rod, a game or leisure item"
+  ]
+ },
+ {
+  "id": "snowboard",
+  "display_name": "Snowboard",
+  "prompts": [
+   "a photo of a snowboard",
+   "a snowboard",
+   "a snowboard, a game or leisure item"
+  ]
+ },
+ {
+  "id": "ski",
+  "display_name": "Ski",
+  "prompts": [
+   "a photo of a ski",
+   "a ski",
+   "a ski, a game or leisure item"
+  ]
+ },
+ {
+  "id": "tent",
+  "display_name": "Tent",
+  "prompts": [
+   "a photo of a tent",
+   "a tent",
+   "a tent, a game or leisure item"
+  ]
+ },
+ {
+  "id": "air_hockey_table",
+  "display_name": "Air Hockey Table",
+  "prompts": [
+   "a photo of an air hockey table",
+   "an air hockey table",
+   "an air hockey table, a game or leisure item"
+  ]
+ },
+ {
+  "id": "jukebox",
+  "display_name": "Jukebox",
+  "prompts": [
+   "a photo of a jukebox",
+   "a jukebox",
+   "a jukebox, a game or leisure item"
+  ]
+ },
+ {
+  "id": "karaoke_machine",
+  "display_name": "Karaoke Machine",
+  "prompts": [
+   "a photo of a karaoke machine",
+   "a karaoke machine",
+   "a karaoke machine, a game or leisure item"
+  ]
+ },
+ {
+  "id": "vending_machine",
+  "display_name": "Vending Machine",
+  "prompts": [
+   "a photo of a vending machine",
+   "a vending machine",
+   "a vending machine, a street or public object"
+  ]
+ },
+ {
+  "id": "atm",
+  "display_name": "Atm",
+  "prompts": [
+   "a photo of an atm",
+   "an atm",
+   "an atm, a street or public object"
+  ]
+ },
+ {
+  "id": "phone_booth",
+  "display_name": "Phone Booth",
+  "prompts": [
+   "a photo of a phone booth",
+   "a phone booth",
+   "a phone booth, a street or public object"
+  ]
+ },
+ {
+  "id": "trash_can",
+  "display_name": "Trash Can",
+  "prompts": [
+   "a photo of a trash can",
+   "a trash can",
+   "a trash can, a street or public object"
+  ]
+ },
+ {
+  "id": "recycling_bin",
+  "display_name": "Recycling Bin",
+  "prompts": [
+   "a photo of a recycling bin",
+   "a recycling bin",
+   "a recycling bin, a street or public object"
+  ]
+ },
+ {
+  "id": "dumpster",
+  "display_name": "Dumpster",
+  "prompts": [
+   "a photo of a dumpster",
+   "a dumpster",
+   "a dumpster, a street or public object"
+  ]
+ },
+ {
+  "id": "fire_hydrant",
+  "display_name": "Fire Hydrant",
+  "prompts": [
+   "a photo of a fire hydrant",
+   "a fire hydrant",
+   "a fire hydrant, a street or public object"
+  ]
+ },
+ {
+  "id": "stop_sign",
+  "display_name": "Stop Sign",
+  "prompts": [
+   "a photo of a stop sign",
+   "a stop sign",
+   "a stop sign, a street or public object"
+  ]
+ },
+ {
+  "id": "parking_meter",
+  "display_name": "Parking Meter",
+  "prompts": [
+   "a photo of a parking meter",
+   "a parking meter",
+   "a parking meter, a street or public object"
+  ]
+ },
+ {
+  "id": "traffic_light",
+  "display_name": "Traffic Light",
+  "prompts": [
+   "a photo of a traffic light",
+   "a traffic light",
+   "a traffic light, a street or public object"
+  ]
+ },
+ {
+  "id": "street_lamp",
+  "display_name": "Street Lamp",
+  "prompts": [
+   "a photo of a street lamp",
+   "a street lamp",
+   "a street lamp, a street or public object"
+  ]
+ },
+ {
+  "id": "mailbox",
+  "display_name": "Mailbox",
+  "prompts": [
+   "a photo of a mailbox",
+   "a mailbox",
+   "a mailbox, a street or public object"
+  ]
+ },
+ {
+  "id": "safe",
+  "display_name": "Safe",
+  "prompts": [
+   "a photo of a safe",
+   "a safe",
+   "a safe, a street or public object"
+  ]
+ },
+ {
+  "id": "stroller",
+  "display_name": "Stroller",
+  "prompts": [
+   "a photo of a stroller",
+   "a stroller",
+   "a stroller, a street or public object"
+  ]
+ },
+ {
+  "id": "water_tower",
+  "display_name": "Water Tower",
+  "prompts": [
+   "a photo of a water tower",
+   "a water tower",
+   "a water tower, a street or public object"
+  ]
+ },
+ {
+  "id": "park_bench",
+  "display_name": "Park Bench",
+  "prompts": [
+   "a photo of a park bench",
+   "a park bench",
+   "a park bench, a street or public object"
+  ]
+ },
+ {
+  "id": "suitcase",
+  "display_name": "Suitcase",
+  "prompts": [
+   "a photo of a suitcase",
+   "a suitcase",
+   "a suitcase, a street or public object"
+  ]
+ },
+ {
+  "id": "shopping_cart",
+  "display_name": "Shopping Cart",
+  "prompts": [
+   "a photo of a shopping cart",
+   "a shopping cart",
+   "a shopping cart, a street or public object"
+  ]
+ },
+ {
+  "id": "portable_toilet",
+  "display_name": "Portable Toilet",
+  "prompts": [
+   "a photo of a portable toilet",
+   "a portable toilet",
+   "a portable toilet, a street or public object"
+  ]
+ },
+ {
+  "id": "shipping_container",
+  "display_name": "Shipping Container",
+  "prompts": [
+   "a photo of a shipping container",
+   "a shipping container",
+   "a shipping container, a street or public object"
+  ]
+ },
+ {
+  "id": "telephone_pole",
+  "display_name": "Telephone Pole",
+  "prompts": [
+   "a photo of a telephone pole",
+   "a telephone pole",
+   "a telephone pole, a street or public object"
+  ]
+ },
+ {
+  "id": "grain_silo",
+  "display_name": "Grain Silo",
+  "prompts": [
+   "a photo of a grain silo",
+   "a grain silo",
+   "a grain silo, a street or public object"
+  ]
+ },
+ {
+  "id": "windmill",
+  "display_name": "Windmill",
+  "prompts": [
+   "a photo of a windmill",
+   "a windmill",
+   "a windmill, a street or public object"
+  ]
+ }
+]

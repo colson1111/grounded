@@ -5,3 +5,13 @@ eval/__pycache__/
 __pycache__/
 *.pyc
 models/
+.openverse_creds.json
+.openverse_token.json
+candidates/
+data/candidates/
+data/images/
+data/candidates_manifest.jsonl
+data/filter_report.json
+state/results_log.jsonl.proxybak
+state/results_log.jsonl.pilotbak
+state/last_run_detail.json
